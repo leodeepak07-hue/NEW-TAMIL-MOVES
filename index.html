@@ -76,16 +76,7 @@ body{
     background:#ff0033;
 }
 
-.details{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0.5s ease;
-    background:#0d0d0d;
-    padding:0 15px;
-}
-
 /* only hovered movie expands */
-
 .details{
     max-height:0;
     overflow:hidden;
@@ -94,10 +85,23 @@ body{
     padding:0 15px;
 }
 
+/* OPENED MOVIE DETAILS */
+
 .f.active .details{
-    max-height:500px;
+    max-height:400px;
     padding:15px;
+    overflow-y:auto;
 }
+/* DETAILS SCROLLBAR */
+
+.details::-webkit-scrollbar{
+    width:5px;
+}
+
+.details::-webkit-scrollbar-thumb{
+    background:red;
+    border-radius:10px;
+}    
 
 /* detail text */
 .details p{
