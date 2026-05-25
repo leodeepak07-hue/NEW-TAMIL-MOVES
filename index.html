@@ -80,7 +80,15 @@ body{
 
 /* only hovered movie expands */
 
-.f:hover .details{
+.details{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s ease;
+    background:#0d0d0d;
+    padding:0 15px;
+}
+
+.f.active .details{
     max-height:500px;
     padding:15px;
 }
@@ -274,7 +282,7 @@ onkeyup="searchMovies()">
 
 <img src="https://imgs.search.brave.com/kbCXqm26ytlIt4wOw_iTemSjlaVeC8JXS3QNwHSACbA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9pbWcvMjgw/eDM4My9wb3Bjb3Ju/L21vdmllX3Bvc3Rl/cnMva2FyYS0yMDI2/MDExNjExNDc0NS0y/Mzc5OS5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Kara (2026)
 </a>
 
@@ -322,7 +330,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/e7JRba8HcinH10Ee0YUU5q-lHAtfDEjBWsZ15tflAVg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9UYzBOamho/TldZdFpUaGpOUzAw/TlRobUxUZ3hPREV0/TnpkaE1XSmhNamsw/TlRsaVhrRXlYa0Zx/Y0djQC5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Athiradi (2026)
 </a>
 
@@ -371,7 +379,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/1OIcp7TA02h84ND-pEORA3A9BfUNNIVO3jEharNnPPU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL0pldGxlZV9H/YWxsZXJ5LTVmMTdj/YjAwLTQ3YmEtMTFm/MS1hZTkzLTExYjI1/MGM4N2I4YS5qcGc_/aW09UmVzaXplLHdp/ZHRoPTMyMA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Jetlee (2026)
 </a>
 
@@ -420,7 +428,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/3KfTYNztJ_iY2DDV9dauXI5lWSJnHbj2pHVNGN5RyVI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL0RyaXNoeWFt/LTNfR2FsbGVyeS0w/YjdmZjFmMC0wYmQ1/LTExZjEtOTAyZi03/ZGFjMzNiMmYxZTIu/anBnP2ltPVJlc2l6/ZSx3aWR0aD0zMjA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Drishyam 3 (2026)
 </a>
 
@@ -469,7 +477,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/tGiEwMzBdsctpOQsUpA42UGMbGqpBtv9hDOO4FpWqAY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93dzcu/dGFtaWx5b2dpLmNv/LnVrL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI2LzA1L3phVFR1/aE9KTVR6bFNSeDdr/dnpWWmV2YzJ3US5q/cGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Derby (2026)
 </a>
 
@@ -518,7 +526,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/Am7ehhQ0qzvh7YE8rpvMCplLAvl1fS_XsC58D2HVFj8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9maWxt/dHJlbmR6LmNvbS91/cGxvYWRzL3Bvc3Rz/L2NvdmVycy9zeXN0/ZW0tMjAyNi1oaW5k/aS1kdWFsLWF1ZGlv/LXdlYmRsLTcyMHAt/LTQ4MHAtLTEwODBw/LndlYnA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 System (2026)
 </a>
 
@@ -567,7 +575,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/aP5Fz6hdHJeZxUZIuGN--bjvl8iy9vS_UvZfppjizAs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/a2FydXBwdS1ldDAw/NDUwNTczLTE3NTMy/NTM1MTAuanBn">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Karuppu (2026)
 </a>
 
@@ -616,7 +624,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/Sd9AI7mjrx60TedunlVayWwfW0ILn1nZ4f9eWnNmHV4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jLnNh/YXZuY2RuLmNvbS83/MTQvU2F0dGVuZHJ1/LU1hYXJ1ZGh1LVZh/YW5pbGFpLUZyb20t/U2F0dGVuZHJ1LU1h/YXJ1ZGh1LVZhYW5p/bGFpLVRhbWlsLTIw/MjYtMjAyNjAzMTMx/NDEwMDQtNTAweDUw/MC5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Sattendru Maarudhu Vaanilai (2026)
 </a>
 
@@ -665,7 +673,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/Mtj2-k9jkg4OIojv2EnBiJV0XtWzpFIl6XykB9FBAzc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk56ZGtOakF4/TldNdE5XWTNNeTAw/TlRJMUxUZzJZV1F0/T0dJM01EQTBOemRo/TWpFeVhrRXlYa0Zx/Y0djQC5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Dhurandhar The Revenge (2026)
 </a>
 
@@ -714,7 +722,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/zpaz-WRGeA96tf20rFmN7pVU8AwGNzOlI7m6nGHu_3g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vYi9iMi9N/ci5fWF8yMDI2X3Bv/c3Rlci5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Mr X (2026)
 </a>
 
@@ -763,7 +771,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/iwCQRJOmFRwa5ospw8LpoUJNoRBbkx2ugFYD7AAJQWg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9vdHRh/cmFzYW4uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzEy/L0FSSVZBQU4tTW92/aWUtUmVsZWFzZS1E/YXRlLTIwMjUucG5n">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Arivaan (2026)
 </a>
 
@@ -812,7 +820,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/FYW6GmR02enC8hzaiBUa_qBavtKX5qwLTBUW4PP_Tbc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9maWxt/YWZhbGFzLmNvbS91/cGxvYWRzL3Bvc3Rz/L2NvdmVycy9wb3N0/ZXIta2FhbGlkYXMt/Mi0yMDI2LndlYnA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Kaalidas 2 (2026)
 </a>
 
@@ -861,7 +869,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/tJV1tqMrdQX7vyVLr_L33rofq_amxsVO3HqZnTdGmuk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3AvdzYwMF9hbmRf/aDkwMF9iZXN0djIv/N0F4Sll2UFdMbE5p/R0g1MkE5ZWVuRHhR/enU4LmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Krishnavataram Part 1 The Heart (2026)
 </a>
 
@@ -910,7 +918,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/-RMTCb-T94jaWFtM5v4C_by6fAcWxODKSda6OwbeOic/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/MjktZXQwMDQ5Nzkz/Mi0xNzc3ODgzNDE2/LmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 29 (2026)
 </a>
 
@@ -959,7 +967,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/NePyxU5m7zRFKLmXsUZAYat1IRzYKmTNlV6hhCnb6vI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9pbWcvMjgw/eDM4My9wb3Bjb3Ju/L21vdmllX3Bvc3Rl/cnMvbmVlbGlyYS0y/MDI2MDMxNjEzMDky/NC0yNDI2OC5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Neelira (2026)
 </a>
 
@@ -1008,7 +1016,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/w8O7z8wONRSDJIet4aI8XJimtv5pk0VJs6dtJ3lVCDs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kZS53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL2ltZy9mMC81/MS9mMDUxMDVhODRl/ZGM4Mjk1N2I1OTE0/MjhkYTE1ZTE1ZS53/ZWJw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Dacoit A Love Story (2026)
 </a>
 
@@ -1057,7 +1065,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/WeZLXQC91DeeumSU6HKUF5Yg7G6RyEmgZJdCU71gjKA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL1ZhYWxhLTJf/RU5HTElTSF9Qb3N0/ZXItNGU1ZWUxZTAt/M2ZhOS0xMWYxLTk0/NjQtZGZjZjMxMTk0/YjUxLmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Vaazha II Biopic of a Billion Bros (2026)
 </a>
 
@@ -1106,7 +1114,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/8Moc9L8iRskE76ZB0ndfTQqMb1MpnJBdXQtd4oN4DlY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/YmhhcmF0aGFuYXR5/YW0tMi1tb2hpbml5/YXR0YW0tZXQwMDQ5/Mjg3NC0xNzc0NTEx/NDQ1LmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Bharathanatyam 2 Mohiniyattam (2026)
 </a>
 
@@ -1155,7 +1163,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/J8EhMmS7TVRayJjwIrq7wdjY-2YI_c0IjcxeERp2I4Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/bG92ZS1pbnN1cmFu/Y2Uta29tcGFueS0y/MDI2LW5vdy1zdHJl/YW1pbmctb24tYW1h/em9uLXByaW1lLXYw/LThzbzdmYW4waWZ6/ZzEuanBlZz93aWR0/aD02NDAmY3JvcD1z/bWFydCZhdXRvPXdl/YnAmcz03YTYxMmQ0/OTI5NTUxN2ZkOWI2/N2Y0M2YzNjM1NDNj/MWI1MDI5MGVj">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Love Insurance Kompany (2026)
 </a>
 
@@ -1204,7 +1212,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/jlTrsb4GSrcT1ETRWd5Gibi0qZfDOTwA7GtYE9RzgCA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3Lm5h/aWphdmF1bHQuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI2/LzA0L2p1c3RpY2Ut/Zm9yLWplbmkud2Vi/cD93PTY3OCZzc2w9/MQ">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Justice for Jeni (2026)
 </a>
 
@@ -1253,7 +1261,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/50xRQFwML8OTDFNdDVE31XAi7htYZsXQEG5Ca1faK-o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/b2gtYnV0dGVyZmx5/LWV0MDA0OTAwNjUt/MTc3MjYxMzYzMi5q/cGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Oh Butterfly (2026)
 </a>
 
@@ -1302,7 +1310,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/957zWzr-J0duL5LDSAojKW_r6024WZuCN0NfJNarRKQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZGluYW1hbGFy/LmNvbS9kYXRhL2Np/bmkvQ2luZUdhbGxl/cnkvVk1fMjAyNjA0/MTAxMzE2MDYwMDAw/MDAuanBn">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Manithan Deivamagalam (2026)
 </a>
 
@@ -1351,7 +1359,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/JYrlQP1lFsxW4_Im52i-OFuNrNggF7i0QEoFxTvLKlU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpHUmxOREl4/TlRndE5tTXdaaTAw/TlRjd0xXSTFOVEF0/WVRKbU5qaGxOalEy/TXprMVhrRXlYa0Zx/Y0djQC5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 The Kerala Story 2 Goes Beyond (2026)
 </a>
 
@@ -1400,7 +1408,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/_Z1jG1zt3OZWQFWooVy489d4h9cgiA4zMQTqAxS_-Jk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/bnh0c2hvd3MuY29t/L2ltYWdlcy90YW1p/bC1tb3ZpZXMvS2F5/aWxhbi1Nb3ZpZS1Q/b3N0ZXIud2VicA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Kayilan (2025)
 </a>
 
@@ -1449,7 +1457,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/HpocrwLDzN_XaQRPBeccJrxS-5WKEFLGDoKJn2ZNgfU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3AvdzYwMF9hbmRf/aDkwMF9iZXN0djIv/NHl6WUY2TUdKOW9a/R29idHRpaVV6MFJZ/cFJYLmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Aadu 3 (2026)
 </a>
 
@@ -1498,7 +1506,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/6-gsZwR0BsP6AIP8xZuZgbQZHNAkSP0pLQCOWFGgpE0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2I1L1JhYWthYXNh/XygyMDI2KV9maWxt/LmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Raakaasa (2026)
 </a>
 
@@ -1547,7 +1555,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/2EYuHnGtgd7LBM-K1bFSidnJMF9F9h2EXp-854y4i0c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL0JpbGVyLWRi/OGZjODUwLTMxZGUt/MTFmMS1hMDA1LTYz/ODgyYTkxYzYzOC5q/cGc_aW09UmVzaXpl/LHdpZHRoPTMyMA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Biker (2026)
 </a>
 
@@ -1596,7 +1604,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/BtuHNg4FMPGdaPaNztQh_SzpvvNlYOAah_ouNQE-56Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9pbWcvMjgw/eDM4My9wb3Bjb3Ju/L21vdmllX3Bvc3Rl/cnMvdG4yMDI2dGhh/bmdhbmF0Y2hhdGhp/cmFtLTIwMjYwMzMw/MTE0MDI3LTI0Mjk4/LmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 TN 2026 (2026)
 </a>
 
@@ -1645,7 +1653,7 @@ Download 1080p
 
 <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/viraaji-et00405762-1721800912.jpg">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Viraaji (2026)
 </a>
 
@@ -1694,7 +1702,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/hsEuVdliBeHZcwPuUJgFFf7BG7Ip0lvvyYHm4X2XlrM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL2dhbGxlcnkl/MjAoNCktYmE1ZGY5/MTAtZDAyYS0xMWYw/LWI5YzktNjFmMDk4/MDdiMDNkLmpwZz9p/bT1SZXNpemUsd2lk/dGg9MzIw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Galatta Family (2025)
 </a>
 
@@ -1743,7 +1751,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/_XAK1_FvKIikgytRTnxv84qxApzSTnoNzRywLMDmJUo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3AvdzYwMF9hbmRf/aDkwMF9iZXN0djIv/bzY5WUtGZDVXU3dY/MWY5UEJHNDdRZmNH/elg0LmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Prathichaya (2026)
 </a>
 
@@ -1792,7 +1800,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/pHkWy6VTUkic21cyvZHlnS79dOMc1oHi-Radc9YaLis/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/aGFwcHktcmFqLWV0/MDA0OTAwOTctMTc3/MjYxMjQ2Mi5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Happy Raj (2026)
 </a>
 
@@ -1841,7 +1849,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/nJtLNdEby3_iD5XIsIeaASlmYgPq4_bTxTQqF7s9f-A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZGlnaXQuaW4v/T1RUL2ltYWdlcy9z/aGFtaXRhYmgtNjA1/YjNmNDFiODc3NzVl/NzYyODQwYWIyLmpw/Zz90cj13LTYwMA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Shamitabh (2015)
 </a>
 
@@ -1890,7 +1898,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/mNkfnDv9LIsuDErSCErdBNNbyqvK8ck3Km_jHVcPp6o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL011c3RhZmEt/TXVzdGFmYS0tcG9z/dGVyLTU3MWMwZTEw/LTE2YzktMTFmMS1i/MTRhLTZmMmFmODVl/MmZkOC5qcGc_aW09/UmVzaXplLHdpZHRo/PTMyMA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Mustafa Mustafa (2026)
 </a>
 
@@ -1939,7 +1947,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/ki52FTSO9MiGhWf1z8qlxAwMsbcW8u4hTEqddRpKNRU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL1lvdXRoX0dh/bGxlcnktNjM5ZTg1/MTAtMDVhMi0xMWYx/LWFjMWYtMzM5MWRi/ZjA0NWU1LmpwZz9p/bT1SZXNpemUsd2lk/dGg9MzIw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Youth (2026)
 </a>
 
@@ -1988,7 +1996,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/N3mLYrK6WwM5XPoN3_9fC_4-UkqArlj2F4egOZJ8j00/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/YXlvLXRoaXMtZmls/bXMtcHJldHR5LWdv/b2QtZm9yLWl0cy1s/b3ctYnVkZ2V0LXN1/eW9kaGFuYS12MC1i/ZHI0YXRudmMzd2cx/LmpwZWc_d2lkdGg9/NjQwJmNyb3A9c21h/cnQmYXV0bz13ZWJw/JnM9ZTkyMTMzOTUz/NTU4NDhhZGNhYzEz/NGYzZDM4NDQwNmFl/YjA3MjM3NQ">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Suyodhana (2026)
 </a>
 
@@ -2037,7 +2045,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/TnPTMcZAdboAKueNZgZL0T8UFy1dzXDccW3T8Kbw6mU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL19LYWEtLS1U/aGUtRm9yZXN0LTY3/NjExOTUwLTAwMjYt/MTFmMS05MjY0LWU1/ODI4MGNkMjMyZi5q/cGc_aW09UmVzaXpl/LHdpZHRoPTMyMA">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Kaa The Forest (2026)
 </a>
 
@@ -2086,7 +2094,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/od6NyKwYfwmllIHM29M7jtce8Ya48Ayj7o3Oo9xyTXs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZGluYW1hbGFy/LmNvbS9kYXRhL2Np/bmkvQ2luZUdhbGxl/cnkvVk1fMjAyNjAy/MjExNTU3NDQwMDAw/MDAuanBn">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Second Case of Seetharam (2026)
 </a>
 
@@ -2135,7 +2143,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/Rf42EyhUtvAIEvWuR3do_bG_bM2EiS87U8F_k8fivig/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL1VzdGFhZC1C/aGFnYXQtU2luZ2gt/M2JiNGZiNjAtZjEx/MS0xMWYwLWJjYTMt/MzE4OGE2ZTcyOTQ2/LmpwZz9pbT1SZXNp/emUsd2lkdGg9MzIw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Ustaad Bhagat Singh (2026)
 </a>
 
@@ -2184,7 +2192,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/2KtmzjdKSHMFtaPnBgiTb_fFZ4AyQyQwMal9R7EcTes/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3AvdzYwMF9hbmRf/aDkwMF9iZXN0djIv/YlFoQ3NjTDd5Vjhx/dG9kMm1EcEphNlMy/OFZKLmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Toaster (2026)
 </a>
 
@@ -2233,7 +2241,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/SF-83eIwqMMK_N1ET98f86sK61z5epBXhwxCv2gx-v8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9saXZl/LnN0YXRpY2ZsaWNr/ci5jb20vMTkyOS80/NDcwOTI2MDU0NF8z/MGNiZWJjYmQ3Lmpw/Zw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Sarkar (2018)
 </a>
 
@@ -2282,7 +2290,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/FROycpUvLpenSjNUXcByf-UsnT4VnQ7-64cu3T8OBoc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kMzJx/eXM5YTZ3bTluby5j/bG91ZGZyb250Lm5l/dC9pbWFnZXMvbW92/aWVzL3Bvc3Rlci9I/RDlMTWE3VUgxVmRY/TGdUb0pBbWE5MUEw/aExqZGd4Rl8zMDB4/NDQyLmpwZz90PTE3/NzI0NDI5NjM">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Sambavam Adhyayam Onnu (2026)
 </a>
 
@@ -2331,7 +2339,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/2McSt3W9JXLo1JZ6DwGaKbh33fem7Issf4VhBwlJ63Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5h/cC1zb3V0aC0xLmFt/YXpvbmF3cy5jb20v/bWVkaWEudGhlc291/dGhmaXJzdC5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MTEvQS1wb3N0ZXIt/b2YtdGhlLWZpbG0t/SGVyLTEuanBn">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Her (2026)
 </a>
 
@@ -2380,7 +2388,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/CXAtoY8iuB34IkUj5Cl_S5VJBdDsHLcVyzGepoGQJXE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpUQXhZemRs/WVRJdFlqWTFNaTAw/WXpaakxUZzJOekl0/TWpZM1pHTTRNVE0x/WkdOa1hrRXlYa0Zx/Y0djQC5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Thaai Kizhavi (2026)
 </a>
 
@@ -2429,7 +2437,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/ne-QQbhEsTQhfQZfhcdGvu7S0ePy1W9tBYETr3obvP8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/a2FkaGFsLWthZGhh/aS1zb2xsYXZhLWV0/MDA0ODQ4NTEtMTc3/MDIwOTE4MC5qcGc">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Kadhal Kadhai Sollava (2026)
 </a>
 
@@ -2478,7 +2486,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/bBUeA0YqBC3Vhj3Ll8jAYjtP0iG80UwDjh-5QID0vuQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZGluYW1hbGFy/LmNvbS9kYXRhL2Np/bmkvQ2luZUdhbGxl/cnkvVk1fMjAyNjAz/MDcxMTU4MjkwMDAw/MDAuanBn">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Kadhal Reset Repeat (2026)
 </a>
 
@@ -2527,7 +2535,7 @@ Download 1080p
 
 <img src="https://imgs.search.brave.com/sVAzLTwb4VQLP03g-Uq_IXxEEfYzRA4oN01o5vEMJIA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdW5k/LWltYWdlcy5zdW5u/eHQuY29tLzI0NjQ1/NC8yNTB4Mzc1X1Nl/ZXRoYVBheWFuYW1U/YW1pbF8yNDY0NTRf/MGFiYzg0MGQtZDA2/Yi00Y2NhLWExZWIt/NDFhMTNlZDU2YWE4/LmpwZw">
 
-<a href="#" class="movie-title">
+<a href="javascript:void(0)" class="movie-title">
 Seetha Payanam (2026)
 </a>
 
@@ -2599,6 +2607,23 @@ function searchMovies(){
 }
 
 </script>
+<script>
+
+let cards = document.querySelectorAll(".f");
+
+cards.forEach(card => {
+
+    let title = card.querySelector(".movie-title");
+
+    title.addEventListener("click", () => {
+
+        card.classList.toggle("active");
+
+    });
+
+});
+
+</script>    
 
 </body>
 </html>
