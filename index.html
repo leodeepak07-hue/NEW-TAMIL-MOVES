@@ -2617,11 +2617,25 @@ cards.forEach(card => {
 
     title.addEventListener("click", () => {
 
+        // close all other cards
+
+        cards.forEach(otherCard => {
+
+            if(otherCard !== card){
+                otherCard.classList.remove("active");
+            }
+
+        });
+
+        // toggle current card
+
         card.classList.toggle("active");
 
     });
 
 });
+
+</script>
 
 </script>    
 
