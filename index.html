@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="QaEB841QnIOawjEnfE6QjZP5wPePcOefXqzaIc2YFlg" /> 
 <meta name="description" content="Watch and download latest Tamil movies in 360p, 720p and 1080p HD quality.">    
@@ -10,7 +11,7 @@
 <meta name="keywords" content="Tamil Movies, HD Movies, Tamil HD Download, 1080p Movies">
 
 <meta name="author" content="Deepak">
-<title>TAMIL MOVIES</title>
+<title>MovieMachi</title>
 
 <style>
 
@@ -262,7 +263,112 @@ onkeyup="searchMovies()">
     padding:20px 0;
     background:#050505;
 }
+    
+/* LOGO */
 
+.logo{
+    text-align:center;
+    margin-bottom:25px;
+    user-select:none;
+}
+
+/* MOVIE */
+
+.logo .movie{
+    font-size:52px;
+    font-weight:900;
+    color:#ff003c;
+    letter-spacing:3px;
+    font-family:Arial Black,sans-serif;
+}
+
+/* MACHI */
+
+.logo .machi{
+    font-size:52px;
+    font-weight:900;
+    color:white;
+    letter-spacing:3px;
+    font-family:Arial Black,sans-serif;
+    margin-left:8px;
+}
+
+/* animation */
+
+.logo{
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.03);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .logo .movie,
+    .logo .machi{
+        font-size:34px;
+        letter-spacing:2px;
+    }
+
+}
+/* REQUEST BOX */
+
+.request-box{
+    width:90%;
+    max-width:500px;
+    margin:30px auto;
+    background:#111;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(255,0,0,0.3);
+}
+
+.request-box h2{
+    margin-bottom:20px;
+    color:#ff003c;
+}
+
+.request-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#1c1c1c;
+    color:white;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.request-box button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#ff003c;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.request-box button:hover{
+    transform:scale(1.03);
+    background:red;
+}
 </style>
 </head>
 
@@ -271,6 +377,12 @@ onkeyup="searchMovies()">
 <body>
 
 <body>
+<div class="logo">
+
+<span class="movie">MOVIE</span>
+<span class="machi">MACHI</span>
+
+</div> 
 
 <div class="search-box">
 
@@ -283,6 +395,22 @@ onkeyup="searchMovies()">
 </div>
 
 <main class="movies">
+<!-- REQUEST BOX -->
+
+<div class="request-box">
+
+<h2>🎬 Request A Movie</h2>
+
+<input 
+type="text" 
+id="movieRequest"
+placeholder="Enter movie name...">
+
+<button onclick="sendRequest()">
+Request Movie
+</button>
+
+</div>    
 
 <main class="movies">
 <main class="movies">
@@ -2647,7 +2775,54 @@ cards.forEach(card => {
 
 </script>
 
-</script>    
+</script>  
+<script>
+
+function sendRequest(){
+
+    let movie =
+    document.getElementById("movieRequest").value;
+
+    if(movie.trim() == ""){
+
+        alert("Enter movie name 😅");
+
+        return;
+    }
+
+    let email =
+    "moviemachi1@gmail.com";
+
+    let subject =
+    "Movie Request";
+
+    let body =
+    "Requested Movie: " + movie;
+
+    let url =
+    "https://mail.google.com/mail/?view=cm&fs=1&to="
+    + email
+    + "&su="
+    + encodeURIComponent(subject)
+    + "&body="
+    + encodeURIComponent(body);
+
+    window.open(url, "_blank");
+
+}
+
+</script>
+<script>
+
+history.scrollRestoration = "manual";
+
+window.onload = function(){
+
+    window.scrollTo(0,0);
+
+};
+
+</script>
 
 </body>
 </html>
