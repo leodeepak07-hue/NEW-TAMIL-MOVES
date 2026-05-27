@@ -424,6 +424,166 @@ onkeyup="searchMovies()">
     }
 
 }
+/* SORT BOX */
+
+.sort-box{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin:25px 0 35px 0;
+    padding-left:20px;
+}
+
+/* SELECT */
+
+.sort-box select{
+
+    background:linear-gradient(
+    135deg,
+    #111,
+    #1c1c1c
+    );
+
+    color:white;
+
+    border:2px solid #ff003c;
+
+    padding:14px 20px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:
+    0 0 10px rgba(255,0,60,0.4),
+    0 0 25px rgba(255,0,60,0.2);
+
+}
+
+/* HOVER */
+
+.sort-box select:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 0 15px red,
+    0 0 35px rgba(255,0,60,0.5);
+
+}
+
+/* CLICK */
+
+.sort-box select:focus{
+
+    border-color:white;
+
+    box-shadow:
+    0 0 15px white,
+    0 0 35px red;
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .sort-box{
+
+        justify-content:center;
+
+        padding-left:0;
+
+    }
+
+    .sort-box select{
+
+        width:170px;
+
+        font-size:15px;
+
+    }
+
+}
+/* SORT BOX */
+
+.sort-box select{
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+
+    background:
+    linear-gradient(145deg,#1a1a1a,#111);
+
+    color:white;
+
+    border:2px solid #ff003c;
+
+    padding:14px 45px 14px 18px;
+
+    border-radius:16px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    outline:none;
+
+    box-shadow:
+    0 0 15px rgba(255,0,60,0.5);
+
+    transition:0.3s;
+}
+
+/* HOVER */
+
+.sort-box select:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 25px rgba(255,0,60,0.9);
+
+}
+
+/* OPTION STYLE */
+
+.sort-box option{
+
+    background:#111;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    padding:12px;
+
+}
+
+
+/* FOCUS */
+
+.sort-box select:focus{
+
+    border-color:#ff3366;
+
+    box-shadow:
+    0 0 30px rgba(255,0,60,1);
+
+}
 </style>
 </head>
 
@@ -474,12 +634,80 @@ placeholder="Enter movie name...">
 Request Movie
 </button>
 
+</div>
+<div class="sort-box">
+
+<select id="sortSelect" onchange="sortMovies()">
+
+<option value="">Sort By</option>
+
+<option value="az">A-Z</option>
+
+<option value="za">Z-A</option>
+
+<option value="date">Date</option>
+
+</select>
+
 </div>    
 
 <main class="movies">
 <main class="movies">
 
 <!-- MOVIE CARD -->
+ <div class="f">
+
+<img src="https://imgs.search.brave.com/5nPe4wKMjlpQKaobI_lnlUKdrsXMhXNQQKqfUG3uZJw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXN2cy5vbmVpbmRp/YS5jb20vcGgtYmln/LzIwMjYvMDUvYnJv/dGhlcnMtYW5kLXNp/c3RlcnMtd2ViLXNl/cmllcy13aGVuLWFu/ZC13aGVyZS10by13/YXRjaC1vbi1vdHQx/Nzc5NzA0NzU4XzUu/anBn">
+
+<a href="javascript:void(0)" class="movie-title">
+Brothers And Sisters (2026) Season 1
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Brothers And Sisters (2026)</p>
+
+<p><b>Director:</b>Chidambaram Manivannan</p>
+
+<p><b>Starring:</b>Bose Venkat, Gayathri Shastry, Nikhila Sankar</p>
+
+<p><b>Genres:</b>Comedy, Drama</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.9/10</p>
+
+<p><b>Last Updated:</b>27 May 2026</p>
+
+<div class="links">
+
+<a class="Epi"
+href="https://big3.uptoweb.link/Moviesda.Mobi_-_Brothers_And_Sisters_2026_Season_01__Epi_01___1080p_HD_.mp4">
+Download Epi 1
+</a>
+
+<a class="Epi"
+href="https://big3.uptoweb.link/Moviesda.Mobi_-_Brothers_And_Sisters_2026_Season_01__Epi_02___1080p_HD_.mp4">
+Download Epi 2
+</a>
+
+<a class="Epi"
+href="https://big1.uptoweb.link/Moviesda.Mobi_-_Brothers_And_Sisters_2026_Season_01__Epi_03___1080p_HD_.mp4">
+Download Epi 3
+</a>
+
+<a class="Epi"
+href="https://big2.uptoweb.link/Moviesda.Mobi_-_Brothers_And_Sisters_2026_Season_01__Epi_04___1080p_HD_.mp4">
+Download Epi 4
+</a>
+
+</div>
+
+</div>
+
+</div>
 <div class="f">
 
 <img src="https://imgs.search.brave.com/kbCXqm26ytlIt4wOw_iTemSjlaVeC8JXS3QNwHSACbA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9pbWcvMjgw/eDM4My9wb3Bjb3Ju/L21vdmllX3Bvc3Rl/cnMva2FyYS0yMDI2/MDExNjExNDc0NS0y/Mzc5OS5qcGc">
@@ -651,10 +879,83 @@ Download Epi 8
 </div>
 <div class="f">
 
+<img src="https://imgs.search.brave.com/X7o2qCoyhDEew14Q3dVgv9HKE7EqXdZYipWvYIsMi6U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzIy/MF9hbmRfaDMzMF9m/YWNlL2NWY21aaDJj/TWFQdVRmUGxtN3FY/bFd5UGY0eC5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+The Boys (2026) Season 5
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>The Boys (2026)</p>
+
+<p><b>Director:</b>James Weaver</p>
+
+<p><b>Starring:</b>Karl Urban, Jack Quaid, Antony Starr</p>
+
+<p><b>Genres:</b>Sci-Fi, Fantasy, Action, Adventure</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b> Tamil</p>
+
+<p><b>Movie Rating:</b>8.4/10</p>
+
+<p><b>Last Updated:</b>15 April 2026</p>
+
+<div class="links">
+
+<a class="Epi"
+href="https://s01.dubshare.one/isaiDub.me_-_The_Boys_2026_Season_05_Epi_01_1080p_HD_.mp4">
+Download Epi 1
+</a>
+
+<a class="Epi"
+href="https://s03.dubshare.one/isaiDub.me_-_The_Boys_2026_Season_05_Epi_02_1080p_HD_.mp4">
+Download Epi 2
+</a>
+
+<a class="Epi"
+href="https://s01.dubshare.one/isaiDub.me_-_The_Boys_2026_Season_05_Epi_03_1080p_HD_.mp4">
+Download Epi 3
+</a>
+
+<a class="Epi"
+href="https://s02.dubshare.one/isaiDub.me_-_The_Boys_2026_Season_05_Epi_04_1080p_HD_.mp4">
+Download Epi 4
+</a>
+
+<a class="Epi"
+href="https://s03.dubshare.one/isaiDub.me_-_The_Boys_2026_Season_05_Epi_05_1080p_HD_.mp4">
+Download Epi 5
+</a>
+
+<a class="Epi"
+href="https://s01.dubshare.one/isaiDub.me_-_The_Boys_2026_Season_05_Epi_06_1080p_HD_.mp4">
+Download Epi 6
+</a>
+
+<a class="Epi"
+href="https://s02.dubshare.one/Moviesda.Mobi_-_The_Boys_2026_Season_05_Epi_07_1080p_HD_.mp4">
+Download Epi 7
+</a>
+
+<a class="Epi"
+href="https://s01.dubshare.one/isaiDub.me_-_The_Boys_2026_Season_05_Epi_08_1080p_HD_.mp4">
+Download Epi 8
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
 <img src="https://imgs.search.brave.com/Uia81EaOIE1_qw2Yv9tCxivehMahgjX2WZl-2oqRGhM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93dzE5/Lm15YXNpYW50di5l/cy93cC1jb250ZW50/L3VwbG9hZHMvMjAy/Ni8wNC9vbGRKS0xh/REJQTERRQmRYdmRO/VExDRWVoVUkuanBn">
 
 <a href="javascript:void(0)" class="movie-title">
-If Wishes Could Kill (2026)
+If Wishes Could Kill (2026) Season 1
 </a>
 
 <div class="details">
@@ -1554,7 +1855,49 @@ Download 1080p
 </div>
 
 </div>
+<div class="f">
 
+<img src="https://imgs.search.brave.com/9h-x6UlPiNZ9voVa0OSpJVTKrlMQtFgRxjrDLTLV3jg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/bW92aWVmb25lLmNv/bS9pbWFnZS1hc3Nl/dHMvMTQ2NzI0L2FC/MXpHYzVCTkhTYVFs/RWhPU25pNHRzOERy/TC5qcGc_ZD0zNjB4/NTQwJnE9ODA">
+
+<a href="javascript:void(0)" class="movie-title">
+Love 911 (2024)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Love 911 (2024)</p>
+
+<p><b>Director:</b>Gi-hoon Jeong</p>
+
+<p><b>Starring:</b>Go Soo, Han Hyo-joo</p>
+
+<p><b>Genres:</b>Comedy, Drama, Romance</p>
+
+<p><b>Quality:</b>BDRip</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>6.9/10</p>
+
+<p><b>Last Updated:</b>30 October 2024</p>
+
+<div class="links">
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjImaGFzaD04MTk5N2UxYWYyNWMyN2EyZWJlMzViMmM2YzIxZTVkYyZleHA9MTc3OTg0NzA3NCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvTG92ZSA5MTEgKDIwMjQpL0xvdmUgOTExIChPcmlnaW5hbCkvTG92ZSA5MTEgKDM2MHAgSEQpL0xvdmUgOTExIDIwMjQgMzYwcCBIRC5tcDQ=">
+Download 560p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjImaGFzaD0zNTA3MTI1ZjNkOTk4MTM4NjhhYjNiNmFjOWJiMzNkZCZleHA9MTc3OTg0NzA5NiZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvTG92ZSA5MTEgKDIwMjQpL0xvdmUgOTExIChPcmlnaW5hbCkvTG92ZSA5MTEgKDcyMHAgSEQpL0xvdmUgOTExIDIwMjQgNzIwcCBIRC5tcDQ=">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
 <div class="f">
 
 <img src="https://imgs.search.brave.com/J8EhMmS7TVRayJjwIrq7wdjY-2YI_c0IjcxeERp2I4Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/bG92ZS1pbnN1cmFu/Y2Uta29tcGFueS0y/MDI2LW5vdy1zdHJl/YW1pbmctb24tYW1h/em9uLXByaW1lLXYw/LThzbzdmYW4waWZ6/ZzEuanBlZz93aWR0/aD02NDAmY3JvcD1z/bWFydCZhdXRvPXdl/YnAmcz03YTYxMmQ0/OTI5NTUxN2ZkOWI2/N2Y0M2YzNjM1NDNj/MWI1MDI5MGVj">
@@ -1595,6 +1938,231 @@ Download 720p
 
 <a class="p1080"
 href="https://s14.cdnserver02.xyz/Moviesda.Mobi_-_Love_Insurance_Kompany_2026_Original_1080p_HD_(3.6_GB).mp4">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/TtEaa5jhrd1pOAvYreC9n6vX_5r48Y0ZDD-jyi-EIUU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjE4ajVudkRpV0wu/anBn">
+
+<a href="javascript:void(0)" class="movie-title">
+Iron Man 3 (2013)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Iron Man 3 (2013)</p>
+
+<p><b>Director:</b>Shane Black</p>
+
+<p><b>Starring:</b>Robert Downey Jr., Gwyneth Paltrow</p>
+
+<p><b>Genres:</b>Action, Adventure, Sci-Fi</p>
+
+<p><b>Quality:</b>BDRip</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.2/10</p>
+
+<p><b>Last Updated:</b>28 January 2021</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD1iYWNkNzYwZjRhM2NhMDcyMTcwMzYyNGJmOWEyMDFlMyZleHA9MTc3OTgxNTcwMSZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAzICgyMDEzKS9Jcm9uIE1hbiAzICg0ODB4MzIwKS9Jcm9uIE1hbiAzLm1wNA==">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD0wODg2M2E4Y2FhMGRiYWFjZGNmZmI5ZDcxMTg5ZWViOSZleHA9MTc3OTgxNTczMCZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAzICgyMDEzKS9Jcm9uIE1hbiAzICg2NDB4MzYwKS9Jcm9uIE1hbiAzIEhELm1wNA==">
+Download 560p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/folb-nmfiLYd5_Z_yezM1Ni7TlcsPjukgTDyCbdL-VM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXQuY29t/L3cvZnVsbC81Lzcv/Yi8yMTM5MzcwLTE0/MDB4MjEwMC1waG9u/ZS1oZC1pcm9uLW1h/bi0yLWJhY2tncm91/bmQtcGhvdG8uanBn">
+
+<a href="javascript:void(0)" class="movie-title">
+Iron Man 2 (2010)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Iron Man 2 (2010)</p>
+
+<p><b>Director:</b>Jon Favreau</p>
+
+<p><b>Starring:</b>Robert Downey Jr., Gwyneth Paltrow</p>
+
+<p><b>Genres:</b>Action, Adventure, Sci-Fi</p>
+
+<p><b>Quality:</b>BDRip</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.0/10</p>
+
+<p><b>Last Updated:</b>28 January 2021</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD1hNTdjOGY0NTgyMDQyNTMzNDU4OWY3YzU1MWNkYWZjNCZleHA9MTc3OTgxNTQ2NSZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAyICgyMDEwKS9Jcm9uIE1hbiAyICg0ODB4MzIwKS9Jcm9uIE1hbiAyLm1wNA==">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD0yYTEzNmFmYTU1MjFkMjdjNzczZjk2OGZhZGI0YjRiMiZleHA9MTc3OTgxNTQ4NSZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAyICgyMDEwKS9Jcm9uIE1hbiAyICg2NDB4MzYwKS9Jcm9uIE1hbiAyIEhELm1wNA==">
+Download 560p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/KJ1ruoCHwn76heFLU2ObEJMxYLCyI0o8SsPhzoUd7jQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjA2/OTQ5MS5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Iron Man 1 (2008)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Iron Man 1 (2008)</p>
+
+<p><b>Director:</b>Jon Favreau</p>
+
+<p><b>Starring:</b>Robert Downey Jr., Terrence Howard</p>
+
+<p><b>Genres:</b>Action, Adventure, Sci-Fi</p>
+
+<p><b>Quality:</b>BDRip</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.9/10</p>
+
+<p><b>Last Updated:</b>28 January 2021</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD1kOTE4YjRjNTFjZmI3OGYyOTcyOTlhOGY5ZjQxZTlmZiZleHA9MTc3OTgxNTE5MyZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAxICgyMDA4KS9Jcm9uIE1hbiAxICg0ODB4MzIwKS9Jcm9uIE1hbiAxLm1wNA==">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD1lYTQwZWZiZGVlYTBlMjdiYjgyZDAyYmIwYWJiMjAzZSZleHA9MTc3OTgxNTIxOCZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAxICgyMDA4KS9Jcm9uIE1hbiAxICg2NDB4MzYwKS9Jcm9uIE1hbiAxIEhELm1wNA==">
+Download 560p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/617O5H6n2MVUlA4htSymt3gW--z5YvZ8ohOH-T6jS_E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODExTENVK1IzRUwu/anBn">
+
+<a href="javascript:void(0)" class="movie-title">
+IT Chapter Two (2019)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>IT Chapter Two (2019)</p>
+
+<p><b>Director:</b>Andy Muschietti</p>
+
+<p><b>Starring:</b>Bill Skarsgard, James McAvoy, Jessica Chastain</p>
+
+<p><b>Genres:</b>Horror, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>6.8/10</p>
+
+<p><b>Last Updated:</b>29 October 2025</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD1hMjM5YTUxMWM4MjRlODRkZDEwOTljOWQ2ZjIyYTJkMiZleHA9MTc3OTgxNDgzNyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgQ2hhcHRlciBUd28gKDIwMTkpL0lUIENoYXB0ZXIgVHdvIChPcmlnaW5hbCkvSVQgQ2hhcHRlciBUd28gKDM2MHAgSEQpL0lUIENoYXB0ZXIgVHdvIDIwMTkgT3JpZ2luYWwgMzYwcCBIRC5tcDQ=">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD0zODc3NDU1YzMzOWJhMjg4ZmZhYmE4ZmNlMzhkMWYxMiZleHA9MTc3OTgxNDg1OSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgQ2hhcHRlciBUd28gKDIwMTkpL0lUIENoYXB0ZXIgVHdvIChPcmlnaW5hbCkvSVQgQ2hhcHRlciBUd28gKDcyMHAgSEQpL0lUIENoYXB0ZXIgVHdvIDIwMTkgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD1jNTc4ZmQxYTZmMzFiYWQ4NjhhZGRkOTQ2YTYwNzBlNCZleHA9MTc3OTgxNDg3OSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgQ2hhcHRlciBUd28gKDIwMTkpL0lUIENoYXB0ZXIgVHdvIChPcmlnaW5hbCkvSVQgQ2hhcHRlciBUd28gKDEwODBwIEhEKS9JVCBDaGFwdGVyIFR3byAyMDE5IE9yaWdpbmFsIDEwODBwIEhELm1wNA==">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/bsyFCmiUfIbFj9KDqfkkSC74JFaA4wFCCEv3xwbae54/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODF1T0xJSXJzSkwu/anBn">
+
+<a href="javascript:void(0)" class="movie-title">
+IT Chapter One (2017)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>IT Chapter One (2017)</p>
+
+<p><b>Director:</b>Andy Muschietti</p>
+
+<p><b>Starring:</b>Bill Skarsgard, Jaeden Martell, Sophia Lillis</p>
+
+<p><b>Genres:</b>Horror, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.2/10</p>
+
+<p><b>Last Updated:</b>29 October 2025</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD05NmMxYWEzZDE0MjlkODRjYTdkMWNiZTkwOTViNWM2MyZleHA9MTc3OTgxNDU3MSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgKDIwMTcpL0lUIChPcmlnaW5hbCkvSVQgKDM2MHAgSEQpL0lUIDIwMTcgT3JpZ2luYWwgMzYwcCBIRC5tcDQ=">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD1kYzMwMzE5MTMwNzMzNmQ5NTY5MmZhYWI2MzBhNzIwMSZleHA9MTc3OTgxNDU5MSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgKDIwMTcpL0lUIChPcmlnaW5hbCkvSVQgKDcyMHAgSEQpL0lUIDIwMTcgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD05M2Q5MGZhZWNmMzcwN2MxOGE1OTM0YmRjOWMwZDUyNiZleHA9MTc3OTgxNDYxMiZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgKDIwMTcpL0lUIChPcmlnaW5hbCkvSVQgKDEwODBwIEhEKS9JVCAyMDE3IE9yaWdpbmFsIDEwODBwIEhELm1wNA==">
 Download 1080p
 </a>
 
@@ -2092,6 +2660,746 @@ Download 1080p
 
 </div>
 
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/vhZE5kT5XoDUUYNuO0IISILv7oaFzkEgQtTnk5gnk_8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9pbWcvMjgw/eDM4My9wb3Bjb3Ju/L21vdmllX3Bvc3Rl/cnMvaG90c3BvdDJt/dWNoLTIwMjYwMTAy/MTA1MjExLTIzMDk0/LmpwZw">
+
+<a href="javascript:void(0)" class="movie-title">
+Hot Spot 2 Much (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Hot Spot 2 Much (2026)</p>
+
+<p><b>Director:</b>Vignesh Karthick</p>
+
+<p><b>Starring:</b>Priya Bhavani Shankar, Brigida Saga, Ashwin Kumar Lakshmikanthan</p>
+
+<p><b>Genres:</b>Comedy, Drama, Romantic</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b> Tamil</p>
+
+<p><b>Movie Rating:</b>9.5/10</p>
+
+<p><b>Last Updated:</b>20 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dl1.biggshare.xyz/Moviesda.Mobi_-_Hot_Spot_2_Much_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s07.hotshare.link/Moviesda.Mobi_-_Hot_Spot_2_Much_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s01.hotshare.link/Moviesda.Mobi_-_Hot_Spot_2_Much_2026_Original_1080p_HD__3.4_GB_.mp4">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/1JEToD1zh-luVKtQv3LgzloXXo0FcGQrtehNkulkbEE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/c3R1ZGlvZmxpY2tz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNi8wMy8wOTE5/MzEzNy9MdWNreS10/aGUtU3VwZXJzdGFy/LmpwZw">
+
+<a href="javascript:void(0)" class="movie-title">
+Lucky the Superstar (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Lucky the Superstar (2026)</p>
+
+<p><b>Director:</b>Udhayabanu Maheshwaran</p>
+
+<p><b>Starring:</b>G.V. Prakash Kumar, Anaswara Rajan, R. Sarathkumar</p>
+
+<p><b>Genres:</b>Drama, Comedy, Kids</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b> Tamil</p>
+
+<p><b>Movie Rating:</b>7.1/10</p>
+
+<p><b>Last Updated:</b>20 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dl2.biggshare.xyz/Moviesda.Mobi_-_Lucky_the_Superstar_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dl8.biggshare.xyz/Moviesda.Mobi_-_Lucky_the_Superstar_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dl10.biggshare.xyz/Moviesda.Mobi_-_Lucky_the_Superstar_2026_Original_1080p_HD__3.3_GB_.mp4">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/RNR7E5ffox7jdaYW-CH5lSkW9cZB8LvE4hJQsoji6O4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlltWmtNVGcw/T0RJdE9HUmtPUzAw/WWpaakxXRmlNRGN0/TldGa1lqWmxObU13/TW1GalhrRXlYa0Zx/Y0djQC5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Baby Girl (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Baby Girl (2025)</p>
+
+<p><b>Director:</b>Arun Varma KP</p>
+
+<p><b>Starring:</b>Nivin Pauly, Lijomol Jose, Jaffer Idukki</p>
+
+<p><b>Genres:</b>Drama, Family, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b> Tamil</p>
+
+<p><b>Movie Rating:</b>8.3/10</p>
+
+<p><b>Last Updated:</b>18 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s03.hotshare.link/Baby_Girl_2025_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s06.hotshare.link/Moviesda.Mobi_-_Baby_Girl_2025_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dl10.biggshare.xyz/Baby_Girl_2025_Original_1080p_HD__3.4_GB_.mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/dttJB0Ix4_r9eD0q7qeUEFiE_gX2hCkXbxjrZ0znjlI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tb3Zp/ZXB1ZmYuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI2LzAy/L2ltYWdlcy0zLmpw/Zw">
+
+<a href="javascript:void(0)" class="movie-title">
+LipLock (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>LipLock (2026)</p>
+
+<p><b>Director:</b>Aghilan Maruthamuthu</p>
+
+<p><b>Starring:</b>Adithya R.K, Adithya Kathir, Niranjana</p>
+
+<p><b>Genres:</b>Romantic, Drama</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.3/10</p>
+
+<p><b>Last Updated:</b>15 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s13.cdnserver02.xyz/Moviesda.Mobi_-_LipLock_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s15.cdnserver02.xyz/Moviesda.Mobi_-_LipLock_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s14.cdnserver02.xyz/Moviesda.Mobi_-_LipLock_2026_Original_1080p_HD_(1.3_GB).mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/ARqXl5de4AxAxExvUEg9mo-pI9QqAJdGKGEaNK8faCg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqUmpZek5r/WW1VdE9Ea3haaTAw/TUdGaUxUaGlabUl0/TkdWak5HTTFZemM0/TWpJeVhrRXlYa0Zx/Y0djQC5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Sweety Naughty Crazy (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Sweety Naughty Crazy (2026)</p>
+
+<p><b>Director:</b>Rajasekar G.</p>
+
+<p><b>Starring:</b>Thrigun A, Srijitaa Ghosh, Iniya</p>
+
+<p><b>Genres:</b>Comedy, Drama, Romantic</p>
+
+<p><b>Quality:</b>HQ PreDVD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>9.4/10</p>
+
+<p><b>Last Updated:</b>14 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s01.cdnserver01.xyz/Sweety_Naughty_Crazy_2026_HQ_PreDVD_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s04.cdnserver01.xyz/Sweety_Naughty_Crazy_2026_HQ_PreDVD_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s01.cdnserver01.xyz/Sweety_Naughty_Crazy_2026_HQ_PreDVD_1080p_HD.mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/Cxaab1wwKGu0K7WEwKWFU4jtOie99UEA5ZdVP45LwYI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9EUmlOREE1/WXpndFlUWTFaUzAw/WXprMUxUaG1ZV0l0/TjJJNE1EaGxaakkx/WmpRelhrRXlYa0Zx/Y0djQC5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Kombuseevi (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Kombuseevi (2025)</p>
+
+<p><b>Director:</b>Ponram</p>
+
+<p><b>Starring:</b>Shanmuga Pandian, R. Sarathkumar, Tharnika Rao</p>
+
+<p><b>Genres:</b>Action, Crime, Drama</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>8.0/10</p>
+
+<p><b>Last Updated:</b>13 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPWNmNTFkNzQ4NDdmNzljODA1NjQ4ZTJhOTA3YzlmYmYxJmV4cD0xNzc5ODUxOTAxJnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvS29tYnVzZWV2aSAoMjAyNSkvS29tYnVzZWV2aSAoT3JpZ2luYWwpL0tvbWJ1c2VldmkgKDM2MHAgSEQpL01vdmllc2RhLk1vYmkgLSBLb21idXNlZXZpIDIwMjUgT3JpZ2luYWwgMzYwcCBIRC5tcDQ=">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPWY3OWQxYzdmMDE5MzFmMjRjZmViZmE4ZTRhMDRhMmNhJmV4cD0xNzc5ODUxOTQyJnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvS29tYnVzZWV2aSAoMjAyNSkvS29tYnVzZWV2aSAoT3JpZ2luYWwpL0tvbWJ1c2VldmkgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBLb21idXNlZXZpIDIwMjUgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPWM5ZDU5M2VmYzUwOWRkZGE4MTY0ZDk1ZGFjNjA4N2FjJmV4cD0xNzc5ODUxOTY0JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvS29tYnVzZWV2aSAoMjAyNSkvS29tYnVzZWV2aSAoT3JpZ2luYWwpL0tvbWJ1c2VldmkgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gS29tYnVzZWV2aSAyMDI1IE9yaWdpbmFsIDEwODBwIEhEICgzLjUgR0IpLm1wNA==">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/uwbrOH4MFt5snqBtMN3ldsahczyHiPQE1ZyIV1VtkQo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/dGhhbGFpdmFyLXRo/YW1iaS10aGFsYWlt/YWl5aWwtZXQwMDQ4/MTI1MS0xNzY4Mzcw/MTI2LmpwZw">
+
+<a href="javascript:void(0)" class="movie-title">
+Thalaivar Thambi Thalaimaiyil (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Thalaivar Thambi Thalaimaiyil (2026)</p>
+
+<p><b>Director:</b>Nithish Sahadev</p>
+
+<p><b>Starring:</b>Jiiva, Ilavarasu, Thambi Ramaiah</p>
+
+<p><b>Genres:</b>Comedy, Drama, Family</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>6.8/10</p>
+
+<p><b>Last Updated:</b>12 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s23.cdnserver03.xyz/Moviesda.Mobi_-_Thalaivar_Thambi_Thalaimaiyil_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s23.cdnserver03.xyz/Moviesda.Mobi_-_Thalaivar_Thambi_Thalaimaiyil_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Thalaivar_Thambi_Thalaimaiyil_2026_Original_1080p_HD_(3.4_GB).mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/AkY2q2ow9prhAzhZWB-9Y7aXEkGo_q-K9JnDwL_xo-A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/cGFyYXNha3RoaS0y/MDI2LW5vdy1zdHJl/YW1pbmctb24temVl/NS12MC1qdzdwZDZm/YmZ6aGcxLmpwZWc_/d2lkdGg9NjQwJmNy/b3A9c21hcnQmYXV0/bz13ZWJwJnM9OGZh/NzZkZmQ5OWE1Mjc0/NGRhZDYzODg0OWVm/ZTM1NDdjMDVhOTdl/ZQ">
+
+<a href="javascript:void(0)" class="movie-title">
+Parasakthi (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Parasakthi (2026)</p>
+
+<p><b>Director:</b>Sudha Kongara Prasad</p>
+
+<p><b>Starring:</b>Sivakarthikeyan, Sree Leela, Jayam Ravi, Atharvaa</p>
+
+<p><b>Genres:</b>Action, Drama, Period, Political</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.9/10</p>
+
+<p><b>Last Updated:</b>07 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s32.cdnserver04.xyz/Moviesda.Mobi_-_Parasakthi_2026_Uncensored_Version_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s34.cdnserver04.xyz/Moviesda.Mobi_-_Parasakthi_2026_Uncensored_Version_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s32.cdnserver04.xyz/Moviesda.Mobi_-_Parasakthi_2026_Uncensored_Version_Original_1080p_HD_(3.3_GB).mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/utWCbEgNNs5xwYaB1LsVQdTAmAA7re3Co9pd_LbqjOA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/aXBsLWluZGlhbi1w/ZW5hbC1sYXctZXQw/MDQ3MTk5NC0xNzYz/NzIyMTI4LmpwZw">
+
+<a href="javascript:void(0)" class="movie-title">
+IPL Indian Penal Law (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>IPL Indian Penal Law (2025)</p>
+
+<p><b>Director:</b>Karunanithi</p>
+
+<p><b>Starring:</b>TTF Vasan, Kishore Kumar G., Abhirami Gopikumar</p>
+
+<p><b>Genres:</b>Crime, Political, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.5/10</p>
+
+<p><b>Last Updated:</b>07 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTkzOGMwMTQ3MTM3NzdiZWFmMWJjN2Y3ZDUwOTJiYTQ0JmV4cD0xNzc5ODUyNjQ2JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDIwMjUpL0lQTCBJbmRpYW4gUGVuYWwgTGF3IChPcmlnaW5hbCkvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDM2MHAgSEQpL01vdmllc2RhLk1vYmkgLSBJUEwgSW5kaWFuIFBlbmFsIExhdyAyMDI1IE9yaWdpbmFsIDM2MHAgSEQubXA0">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPWM0MTNjYmIyMWMwYjMzM2Q0Nzk0N2VhZTMzNzIwNWVkJmV4cD0xNzc5ODUyNjgxJnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDIwMjUpL0lQTCBJbmRpYW4gUGVuYWwgTGF3IChPcmlnaW5hbCkvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBJUEwgSW5kaWFuIFBlbmFsIExhdyAyMDI1IE9yaWdpbmFsIDcyMHAgSEQubXA0">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTVlOWEyZDhkYjljYTRkYmU5N2MzZWY1MjE3YzU1OTAzJmV4cD0xNzc5ODUyNzA1JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDIwMjUpL0lQTCBJbmRpYW4gUGVuYWwgTGF3IChPcmlnaW5hbCkvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gSVBMIEluZGlhbiBQZW5hbCBMYXcgMjAyNSBPcmlnaW5hbCAxMDgwcCBIRCAoMy40IEdCKS5tcDQ=">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/GDLV-7kpAHE-SR0izDuq4BqhNYETAgiLs5m0n0r9RIc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dGhlLXJhamEtc2Fh/Yi0yMDI2LXJldmll/dy1kaXNjdXNzaW9u/LXRocmVhZC1zcG9p/bGVycy1tdXN0LXYw/LWJoZ3VqOWg2dWFj/ZzEucG5nP3dpZHRo/PTEwODAmZm9ybWF0/PXBuZyZhdXRvPXdl/YnAmcz02NzQ2OTQ1/ZWJmYzQ3OTdiMTM0/ODg2ZjkyYzQ4YmM5/NzFlODlhYzVl">
+
+<a href="javascript:void(0)" class="movie-title">
+The Raja Saab (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>The Raja Saab (2026)</p>
+
+<p><b>Director:</b>Maruthi Dasari</p>
+
+<p><b>Starring:</b>Prabhas, Sanjay Dutt, Boman Irani</p>
+
+<p><b>Genres:</b>Comedy, Horror, Romantic</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>8.1/10</p>
+
+<p><b>Last Updated:</b>06 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s25.cdnserver03.xyz/Moviesda.Mobi_-_The_Raja_Saab_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s02.cdnserver01.xyz/Moviesda.Mobi_-_The_Raja_Saab_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s22.cdnserver03.xyz/Moviesda.Mobi_-_The_Raja_Saab_2026_Original_1080p_HD_(3.4_GB).mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/K9IGOAYaa1Gmjvq9mhQd9YazhgM7veZ7erRxUoxtuaQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2NjLzUw/LzkzL2NjNTA5M2M0/NGY4NmE5N2MyOWE4/MDA1MjUxMzI2M2Zk/LmpwZw">
+
+<a href="javascript:void(0)" class="movie-title">
+Sarvam Maya (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Sarvam Maya (2025)</p>
+
+<p><b>Director:</b>Akhil Sathyan</p>
+
+<p><b>Starring:</b>Nivin Pauly, Aju Varghese, Janardhanan</p>
+
+<p><b>Genres:</b>Comedy, Drama, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>9.2/10</p>
+
+<p><b>Last Updated:</b>30 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dl10.biggshare.xyz/Sarvam_Maya_2025_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s05.hotshare.link/Sarvam_Maya_2025_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dl8.biggshare.xyz/Sarvam_Maya_2025_Original_1080p_HD__3.4_GB_.mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/W4VdUCH9UrWud4CfI4Chgu8xiphBLmOmN78fbWtIOaM/rs:fit:500:0:1:0/g:ce/aHR0cDovL3d3dy5p/bXBhd2FyZHMuY29t/L2ludGwvaW5kaWEv/MjAyNS9wb3N0ZXJz/L2RodXJhbmRoYXIu/anBn">
+
+<a href="javascript:void(0)" class="movie-title">
+Dhurandhar (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Dhurandhar (2025)</p>
+
+<p><b>Director:</b>Aditya Dhar</p>
+
+<p><b>Starring:</b>Ranveer Singh, Akshaye Khanna, Sanjay Dutt</p>
+
+<p><b>Genres:</b>Action, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>9.3/10</p>
+
+<p><b>Last Updated:</b>01 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dl2.biggshare.xyz/Moviesda.Mobi_-_Dhurandhar_2025_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dl3.biggshare.xyz/Moviesda.Mobi_-_Dhurandhar_2025_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dl10.biggshare.xyz/Moviesda.Mobi_-_Dhurandhar_2025_Original_1080p_HD__3.2_GB_.mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/BfLxD9qpkJa8YpEuk_BR2QW8TTPLk7LnflKCh0fOjZ4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/bW92aWUtcmV3cml0/ZS12YWEtdmFhdGhp/eWFhci0yMDI2LXYw/LXVhZW00bnVpaGlk/ZzEuanBnP3dpZHRo/PTEwNjcmZm9ybWF0/PXBqcGcmYXV0bz13/ZWJwJnM9MzY4NmY1/MThhOWFjN2RkZmM4/N2IwMzgwNjhlYjlj/ZmIyZWY1YWZlYg">
+
+<a href="javascript:void(0)" class="movie-title">
+Vaa Vaathiyaar (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Vaa Vaathiyaar (2026)</p>
+
+<p><b>Director:</b>Nalan Kumarasamy</p>
+
+<p><b>Starring:</b>Karthi, Sathyaraj, Krithi Shetty</p>
+
+<p><b>Genres:</b>Action, Comedy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>5.7/10</p>
+
+<p><b>Last Updated:</b>28 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s01.hotshare.link/Moviesda.Mobi_-_Vaa_Vaathiyaar_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dl3.biggshare.xyz/Moviesda.Mobi_-_Vaa_Vaathiyaar_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dl9.biggshare.xyz/Moviesda.Mobi_-_Vaa_Vaathiyaar_2026_Original_1080p_HD__3.5_GB_.mp4">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/jtRUTdEJEUYGPfnEzKPp3UqRphcXZWPRlUXgKrgFyOQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL1NpcmFpX0dh/bGxlcnktODA3YzU5/MjAtNzgzOC0xMWYw/LThkZjMtZGIwMWQx/YmFhNDQ0LmpwZz9p/bT1SZXNpemUsd2lk/dGg9MzIw">
+
+<a href="javascript:void(0)" class="movie-title">
+Sirai (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Sirai (2025)</p>
+
+<p><b>Director:</b>Suresh Rajakumari</p>
+
+<p><b>Starring:</b>Vikram Prabhu, L. K. Akshay Kumar, Anishma Anilkumar</p>
+
+<p><b>Genres:</b>Action, Drama, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>9.4/10</p>
+
+<p><b>Last Updated:</b>23 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTM4MzM1ODc2NmU1ZGNkOGY4MTM5ZGE1NmVkYzJlY2UwJmV4cD0xNzc5ODU0MTQyJnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvU2lyYWkgKDIwMjUpL1NpcmFpIChPcmlnaW5hbCkvU2lyYWkgKDM2MHAgSEQpL01vdmllc2RhLk1vYmkgLSBTaXJhaSAyMDI1IE9yaWdpbmFsIDM2MHAgSEQubXA0">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTQ3ZDE0NzBhZDQyNWUxNTFhOWMwNzQ4ZTYwMTg2YWFkJmV4cD0xNzc5ODU0MTY2JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvU2lyYWkgKDIwMjUpL1NpcmFpIChPcmlnaW5hbCkvU2lyYWkgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBTaXJhaSAyMDI1IE9yaWdpbmFsIDcyMHAgSEQubXA0">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTU0NDE3OTA4NWY2YTFiOTk4ZDc0Yzc3ZTRiOWM1MmE1JmV4cD0xNzc5ODU0MTg4JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvU2lyYWkgKDIwMjUpL1NpcmFpIChPcmlnaW5hbCkvU2lyYWkgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gU2lyYWkgMjAyNSBPcmlnaW5hbCAxMDgwcCBIRCAoMi40IEdCKS5tcDQ=">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/UHu2tSo3XljhogE1xJsOPbtwINxzb40YQQDrTlkyUoM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9HUmpNek0x/Wm1VdE1qazBZaTAw/TnpBMExUazNaV1l0/WldNM01XWTNNMkV3/TWpCaFhrRXlYa0Zx/Y0djQC5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Tere Ishk Mein (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Tere Ishk Mein (2025)</p>
+
+<p><b>Director:</b>Aanand L. Rai</p>
+
+<p><b>Starring:</b>Dhanush, Kriti Sanon</p>
+
+<p><b>Genres:</b>Drama, Romantic</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>9.1/10</p>
+
+<p><b>Last Updated:</b>23 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPWFmOGQ1NDNkZTdjMWRiYTRmNTU1NGMzM2QxM2RjYWUzJmV4cD0xNzc5ODU0MzI0JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvVGVyZSBJc2hrIE1laW4gKDIwMjUpL1RlcmUgSXNoayBNZWluIChPcmlnaW5hbCkvVGVyZSBJc2hrIE1laW4gKDM2MHAgSEQpL01vdmllc2RhLk1vYmkgLSBUZXJlIElzaGsgTWVpbiAyMDI1IE9yaWdpbmFsIDM2MHAgSEQubXA0">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTczZTY0ZmNhMWU0ZGE0NmFiMjBmZjY2NzQ4Zjk1MmRlJmV4cD0xNzc5ODU0MzQ5JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvVGVyZSBJc2hrIE1laW4gKDIwMjUpL1RlcmUgSXNoayBNZWluIChPcmlnaW5hbCkvVGVyZSBJc2hrIE1laW4gKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBUZXJlIElzaGsgTWVpbiAyMDI1IE9yaWdpbmFsIDcyMHAgSEQubXA0">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTAzYzQyNzY5YzY2ZDY4YjQ3ODg3MDM0MzNiZTdkZTA3JmV4cD0xNzc5ODU0MzY5JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvVGVyZSBJc2hrIE1laW4gKDIwMjUpL1RlcmUgSXNoayBNZWluIChPcmlnaW5hbCkvVGVyZSBJc2hrIE1laW4gKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gVGVyZSBJc2hrIE1laW4gMjAyNSBPcmlnaW5hbCAxMDgwcCBIRCAoMy4wIEdCKS5tcDQ=">
+Download 1080p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/g6fhC4a6kClIHO0KM1v6vMiKehcp1l6DI-iQYbvxI1A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL01hcmstR2Fs/bGVyeS0zOTMyM2Ix/MC04OTY5LTExZjAt/OGUzMS1kZDUzMDFm/N2E2YzIuanBnP2lt/PVJlc2l6ZSx3aWR0/aD0zMjA">
+
+<a href="javascript:void(0)" class="movie-title">
+Mark (2025)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Mark (2025)</p>
+
+<p><b>Director:</b>Vijay Kartikeyaa</p>
+
+<p><b>Starring:</b>Kiccha Sudeep, Naveen Chandra, Yogi Babu</p>
+
+<p><b>Genres:</b>Action, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>8.7/10</p>
+
+<p><b>Last Updated:</b>23 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTc5MjI0YTk0NjY3ZjljN2E5YTljODhlOTM3ZDZmMGNmJmV4cD0xNzc5ODU0NTY2JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvTWFyayAoMjAyNSkvTWFyayAoT3JpZ2luYWwpL01hcmsgKDM2MHAgSEQpL01vdmllc2RhLk1vYmkgLSBNYXJrIDIwMjUgT3JpZ2luYWwgMzYwcCBIRC5tcDQ=">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTZkZmQ2MGI1NmQxMTBiYmRmMWJiNmM1ODlkNmNjZTc0JmV4cD0xNzc5ODU0NTg2JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvTWFyayAoMjAyNSkvTWFyayAoT3JpZ2luYWwpL01hcmsgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBNYXJrIDIwMjUgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTc1MGFhZjY0Y2FkZDUyYjYzMmVkNjk5ZmZhOTA5YjM3JmV4cD0xNzc5ODU0NjA2JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvTWFyayAoMjAyNSkvTWFyayAoT3JpZ2luYWwpL01hcmsgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gTWFyayAyMDI1IE9yaWdpbmFsIDEwODBwIEhEICgyLjcgR0IpLm1wNA==">
+Download 1080p
+</a>
+
+</div>
+</div>
 </div>
 
 <div class="f">
@@ -2975,6 +4283,472 @@ Download 1080p
 </div>
 
 </div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/PmvpV2rPjnC24asklNu8aEDre6acctmDXzmTH04z7hc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9URTFNMlpr/WmpZdE56RXhOaTAw/TVRRd0xUZzNaRFl0/WVRBM1ltUXlNRGd5/WmpVNFhrRXlYa0Zx/Y0djQC5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Jana Nayagan Audio Launch (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Jana Nayagan Audio Launch (2026)</p>
+
+<p><b>Director:</b>H. Vinoth</p>
+
+<p><b>Starring:</b>Vijay, Bobby Deol, Pooja Hegde</p>
+
+<p><b>Genres:</b>Action, Drama, Political</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>10/10</p>
+
+<p><b>Last Updated:</b>04 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dl9.biggshare.xyz/Moviesda.Mobi_-_Jana_Nayagan_Audio_Launch_2026_HDRip_360p_HD.mp4">
+Download 480p
+</a>
+
+<a class="p720"
+href="https://s01.hotshare.link/Moviesda.Mobi_-_Jana_Nayagan_Audio_Launch_2026_HDRip_720p_HD.mp4">
+Download 720p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/h7NZ5a0U7gl2SdouE6FwIYRJt64P_2fjo04FkrfmPug/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL1BhcmFhMS1t/aW4tMjNjY2RjNjAt/ZWJiZC0xMWYwLTk0/MGYtZjFkODZjMjRh/M2MxLmpwZz9pbT1S/ZXNpemUsd2lkdGg9/MzIw">
+
+<a href="javascript:void(0)" class="movie-title">
+Parasakthi Audio Launch (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Parasakthi Audio Launch (2026)</p>
+
+<p><b>Director:</b>Sudha Kongara Prasad</p>
+
+<p><b>Starring:</b>Sivakarthikeyan, Sree Leela, Jayam Ravi, Atharvaa</p>
+
+<p><b>Genres:</b>Action, Drama, Period, Political</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.9/10</p>
+
+<p><b>Last Updated:</b>07 February 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dl7.biggshare.xyz/Moviesda.Mobi_-_Parasakthi_Audio_Launch_2026_Full_Show_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dl5.biggshare.xyz/Moviesda.Mobi_-_Parasakthi_Audio_Launch_2026_Full_Show_720p_HD.mp4">
+Download 720p
+</a>
+
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/PfLNj_9_xW8-XTnAUpICNrIjbxm6RljWoAoctjOgNo8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oYXJyeXBvdHRl/cmZhbnpvbmUuY29t/L2RlYXRobHktaGFs/bG93cy1wYXJ0LTIt/aGFycnktcG9zdGVy/LmpwZw">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and The Deathly Hallows Part 2 (2011)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and The Deathly Hallows Part 2 (2011)</p>
+
+<p><b>Director:</b>David Yates</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Emma Watson, Rupert Grint</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>8.1/10</p>
+
+<p><b>Last Updated:</b>16 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0xMmUzMjMwMDBjMDA2N2YxYzk0MjcxOWUzNWQyYTg5NiZleHA9MTc3OTgxNDE4NCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMiAoMjAxMSkvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMiAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDIgKDM2MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDIgMjAxMSBPcmlnaW5hbCAzNjBwIEhELm1wNA==">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1kMGRiYmVhMzIxOTNjYmFlMDUwOGM1ZTkwYTU0YzYxNiZleHA9MTc3OTgxNDIxMCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMiAoMjAxMSkvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMiAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDIgKDcyMHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDIgMjAxMSBPcmlnaW5hbCA3MjBwIEhELm1wNA==">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0wM2Y5NDNiMjM4MzM4NWQ4N2Y1NGM2MjAzZTZmZjZhZCZleHA9MTc3OTgxNDIyOSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMiAoMjAxMSkvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMiAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDIgKDEwODBwIEhEKS9IYXJyeSBQb3R0ZXIgYW5kIFRoZSBEZWF0aGx5IEhhbGxvd3MgUGFydCAyIDIwMTEgT3JpZ2luYWwgMTA4MHAgSEQubXA0">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/s5MOYLPAujJpyTkKW249qeRSPiXikkMFXtJqAH6xe7Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2hh/cnJ5cG90dGVyL2lt/YWdlcy85Lzk1L0hh/cnJ5X1BvdHRlcl9h/bmRfdGhlX0RlYXRo/bHlfSGFsbG93c19Q/YXJ0XzJfcHJvbW90/aW9uYWxfcG9zdGVy/LmpwZy9yZXZpc2lv/bi9sYXRlc3Qvc2Nh/bGUtdG8td2lkdGgt/ZG93bi8yNjc_Y2I9/MjAxMzA4MDMxNjQz/NDU">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and The Deathly Hallows Part 1 (2010)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and The Deathly Hallows Part 1 (2010)</p>
+
+<p><b>Director:</b>Lionel Wigram</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Emma Watson, Rupert Grint</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.7/10</p>
+
+<p><b>Last Updated:</b>16 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1kNDY3MTU2MmYyOGUyMjY0ZWY0ZjIyYjZiMjI2NDUwYSZleHA9MTc3OTgxMzk2OCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMSAoMjAxMCkvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMSAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDEgKDM2MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDEgMjAxMCBPcmlnaW5hbCAzNjBwIEhELm1wNA==">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0xYWVkMTg0MjJiZGQxOWJiZjgzNzI0MjA1ZTZlNzI3NyZleHA9MTc3OTgxMzk4OSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMSAoMjAxMCkvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMSAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDEgKDcyMHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDEgMjAxMCBPcmlnaW5hbCA3MjBwIEhELm1wNA==">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1lZDY2MDNjOGY1NTYyYzE0MDE4ZmIzZDYzN2IxNGE4OCZleHA9MTc3OTgxNDAxNyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMSAoMjAxMCkvSGFycnkgUG90dGVyIGFuZCBUaGUgRGVhdGhseSBIYWxsb3dzIFBhcnQgMSAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIERlYXRobHkgSGFsbG93cyBQYXJ0IDEgKDEwODBwIEhEKS9IYXJyeSBQb3R0ZXIgYW5kIFRoZSBEZWF0aGx5IEhhbGxvd3MgUGFydCAxIDIwMTAgT3JpZ2luYWwgMTA4MHAgSEQubXA0">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/WpqsB0u1tEkUxlU8R7jKm1Kk77Gpa9c8-ONN9M_mph4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9EZGhNV0ky/WXpjdFpETmxOeTAw/TVRjNExXSmpZbU10/TldVNFpHUTJaVE16/WWprelhrRXlYa0Zx/Y0djQC5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and The Order of the Phoenix (2007)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and The Order of the Phoenix (2007)</p>
+
+<p><b>Director:</b>David Yates</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.7/10</p>
+
+<p><b>Last Updated:</b>07 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD02NTIyMjRhZTE2NDBjYTcwNzFjNDk5Y2YzMzQwZmQyMyZleHA9MTc3OTgxMzc2MCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgT3JkZXIgb2YgdGhlIFBob2VuaXggKDIwMDcpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIE9yZGVyIG9mIHRoZSBQaG9lbml4IChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCBUaGUgT3JkZXIgb2YgdGhlIFBob2VuaXggKDM2MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIE9yZGVyIG9mIHRoZSBQaG9lbml4IDIwMDcgT3JpZ2luYWwgMzYwcCBIRC5tcDQ=">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0xODc2YTAyYmIzMGQ5N2NiOTNkNWQxODJiMjFiOWY3MCZleHA9MTc3OTgxMzc4MyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgT3JkZXIgb2YgdGhlIFBob2VuaXggKDIwMDcpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIE9yZGVyIG9mIHRoZSBQaG9lbml4IChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCBUaGUgT3JkZXIgb2YgdGhlIFBob2VuaXggKDcyMHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIE9yZGVyIG9mIHRoZSBQaG9lbml4IDIwMDcgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD01NTJjMTJkMDBiMTc0OWIyZjgwODUyMjZmMzFkYzU0NiZleHA9MTc3OTgxMzgwNyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgT3JkZXIgb2YgdGhlIFBob2VuaXggKDIwMDcpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIE9yZGVyIG9mIHRoZSBQaG9lbml4IChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCBUaGUgT3JkZXIgb2YgdGhlIFBob2VuaXggKDEwODBwIEhEKS9IYXJyeSBQb3R0ZXIgYW5kIFRoZSBPcmRlciBvZiB0aGUgUGhvZW5peCAyMDA3IE9yaWdpbmFsIDEwODBwIEhELm1wNA==">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/56Dfw2D6OnTZjs1u8QqHvjkjnNYyD9z36HjLd6wbIIg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ydWtt/aW5pbTIuZmxpeGNh/cnQuY29tL2ltYWdl/LzUzMC81MzAvam05/aGZndzAvbW92aWUv/Yi9uLzMvMjAxOC1k/dmQtd2FybmVyLWJy/b3MtZXhjZWwtaG9t/ZS12aWRlb3MtZW5n/bGlzaC1oYXJyeS1w/b3R0ZXItYW5kLW9y/aWdpbmFsLWltYWY5/NmZ4cDI2bWpyYmYu/anBlZz9xPTkw">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and The Half-Blood Prince (2009)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and The Half-Blood Prince (2009)</p>
+
+<p><b>Director:</b>Lionel Wigram</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.7/10</p>
+
+<p><b>Last Updated:</b>07 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD05YWRhNmY1ZGMyYzI4YzkyY2NjNWIyYzUwOGM1OGEwMiZleHA9MTc3OTgxMzU1NyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgSGFsZi1CbG9vZCBQcmluY2UgKDIwMDkpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIEhhbGYtQmxvb2QgUHJpbmNlIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCBUaGUgSGFsZi1CbG9vZCBQcmluY2UgKDM2MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIEhhbGYtQmxvb2QgUHJpbmNlIDIwMDkgT3JpZ2luYWwgMzYwcCBIRC5tcDQ=">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD00MzgyMDVmMDA4ZDQ3NzVjMzc1ODE3OWQ5MDBiZGY2NyZleHA9MTc3OTgxMzU3NyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgSGFsZi1CbG9vZCBQcmluY2UgKDIwMDkpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIEhhbGYtQmxvb2QgUHJpbmNlIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCBUaGUgSGFsZi1CbG9vZCBQcmluY2UgKDcyMHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIEhhbGYtQmxvb2QgUHJpbmNlIDIwMDkgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD01ZGM4NWE4YzBiYTZmMWM4MGUyYTA0Njc1YjZhNWY4ZiZleHA9MTc3OTgxMzU5NSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgSGFsZi1CbG9vZCBQcmluY2UgKDIwMDkpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIEhhbGYtQmxvb2QgUHJpbmNlIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCBUaGUgSGFsZi1CbG9vZCBQcmluY2UgKDEwODBwIEhEKS9IYXJyeSBQb3R0ZXIgYW5kIFRoZSBIYWxmLUJsb29kIFByaW5jZSAyMDA5IE9yaWdpbmFsIDEwODBwIEhELm1wNA==">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/jW14Z99bZG0OC5Y4t85XFO7-L_DlM8zIi4_Vt2PfSU4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zaG90/b253aGF0LmNvbS9p/bWFnZXMvMDMzMDM3/My5qcGc">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and the Goblet of Fire (2005)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and the Goblet of Fire (2005)</p>
+
+<p><b>Director:</b>Mike Newell</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.8/10</p>
+
+<p><b>Last Updated:</b>06 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD05OWUyOTZhOWE4MmY0NzlkMTY0Mjg0M2U4N2EyZjE5YiZleHA9MTc3OTgxMzI3MCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgR29ibGV0IG9mIEZpcmUgKDIwMDUpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIEdvYmxldCBvZiBGaXJlIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCB0aGUgR29ibGV0IG9mIEZpcmUgKDM2MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIEdvYmxldCBvZiBGaXJlIDIwMDUgT3JpZ2luYWwgMzYwcCBIRC5tcDQ=">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD05YWQyZGFkNzNjNWE1M2EwMTZkMGJjZWNiMzExY2MzYiZleHA9MTc3OTgxMzMwNCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgR29ibGV0IG9mIEZpcmUgKDIwMDUpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIEdvYmxldCBvZiBGaXJlIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCB0aGUgR29ibGV0IG9mIEZpcmUgKDcyMHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIEdvYmxldCBvZiBGaXJlIDIwMDUgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0xZjRlMzVmYjUwOTYxZGNjODY3OTEwMjk5YzBlZDgxMiZleHA9MTc3OTgxMzMyNyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgR29ibGV0IG9mIEZpcmUgKDIwMDUpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIEdvYmxldCBvZiBGaXJlIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCB0aGUgR29ibGV0IG9mIEZpcmUgKDEwODBwIEhEKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBHb2JsZXQgb2YgRmlyZSAyMDA1IE9yaWdpbmFsIDEwODBwIEhELm1wNA==">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/1ICKuwS1tQ-6QIxK39t5LNa8CSvnDhdHn2BwKFvQRj0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ydWtt/aW5pbTIuZmxpeGNh/cnQuY29tL2ltYWdl/LzgwMC84MDAvam1r/d3lhODAvcG9zdGVy/L3gvNS9wL2xhcmdl/LXdiLW9mZmljaWFs/LWxpY2Vuc2VkLWhh/cnJ5LXBvdHRlci1w/cmlzb25lci1vZi1h/emthYmFuLW9yaWdp/bmFsLWltYWY5Z2s2/enZrY3R1ZncuanBl/Zz9xPTkw">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and The Prisoner of Azkaban (2004)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and The Prisoner of Azkaban (2004)</p>
+
+<p><b>Director:</b>Alfonso Cuaron</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>8.0/10</p>
+
+<p><b>Last Updated:</b>06 January 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1mZDAxYjBhNGJhM2QwYzBiNjhkMGVhOTM5NDgwOTExOCZleHA9MTc3OTgxMjk5NSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgUHJpc29uZXIgb2YgQXprYWJhbiAoMjAwNCkvSGFycnkgUG90dGVyIGFuZCBUaGUgUHJpc29uZXIgb2YgQXprYWJhbiAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIFByaXNvbmVyIG9mIEF6a2FiYW4gKDM2MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIFByaXNvbmVyIG9mIEF6a2FiYW4gMjAwNCBPcmlnaW5hbCAzNjBwIEhELm1wNA==">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1iYTc0NzVlNzVhYTNhODZhMTRkODMxNjUxNTVmMzEzOSZleHA9MTc3OTgxMzAxNSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgUHJpc29uZXIgb2YgQXprYWJhbiAoMjAwNCkvSGFycnkgUG90dGVyIGFuZCBUaGUgUHJpc29uZXIgb2YgQXprYWJhbiAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIFByaXNvbmVyIG9mIEF6a2FiYW4gKDcyMHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIFByaXNvbmVyIG9mIEF6a2FiYW4gMjAwNCBPcmlnaW5hbCA3MjBwIEhELm1wNA==">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1lNzY5OTQxZjA5ODk4ZGM5NjNhNmI3NzM1ZTQ3MWE2MiZleHA9MTc3OTgxMzA0NyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCBUaGUgUHJpc29uZXIgb2YgQXprYWJhbiAoMjAwNCkvSGFycnkgUG90dGVyIGFuZCBUaGUgUHJpc29uZXIgb2YgQXprYWJhbiAoT3JpZ2luYWwpL0hhcnJ5IFBvdHRlciBhbmQgVGhlIFByaXNvbmVyIG9mIEF6a2FiYW4gKDEwODBwIEhEKS9IYXJyeSBQb3R0ZXIgYW5kIFRoZSBQcmlzb25lciBvZiBBemthYmFuIDIwMDQgT3JpZ2luYWwgMTA4MHAgSEQubXA0">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/heCSzwa4UFCLXJobfEi1i_8niaiTEEjvlGfGQFrJEtc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oYXJyeXBvdHRl/cmZhbnpvbmUuY29t/L2NoYW1iZXItb2Yt/c2VjcmV0cy1oYXJy/eS1wb3N0ZXIuanBn">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and the Chamber of Secrets (2002)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and the Chamber of Secrets (2002)</p>
+
+<p><b>Director:</b>Chris Columbus</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.7/10</p>
+
+<p><b>Last Updated:</b>27 December 2025</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0yZGVjMmM2NGFlNWM3NWY1ZmJjNWVmNjNiMWQ1NmMwZiZleHA9MTc3OTgxMjY5MSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgQ2hhbWJlciBvZiBTZWNyZXRzICgyMDAyKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMgKE9yaWdpbmFsKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMgKDM2MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIENoYW1iZXIgb2YgU2VjcmV0cyAyMDAyIE9yaWdpbmFsIDM2MHAgSEQubXA0">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1mZDY0YjQ1MTRmYTBlYTQ1OTViNWE3YzhiOGE1NTc4NCZleHA9MTc3OTgxMjcxNiZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgQ2hhbWJlciBvZiBTZWNyZXRzICgyMDAyKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMgKE9yaWdpbmFsKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMgKDcyMHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIENoYW1iZXIgb2YgU2VjcmV0cyAyMDAyIE9yaWdpbmFsIDcyMHAgSEQubXA0">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0yNzBjOTM0NWM5ZjEwMTQxZmZmMTBiNDE4MDkyNjBhYiZleHA9MTc3OTgxMjczNiZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgQ2hhbWJlciBvZiBTZWNyZXRzICgyMDAyKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMgKE9yaWdpbmFsKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMgKDEwODBwIEhEKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMgMjAwMiBPcmlnaW5hbCAxMDgwcCBIRC5tcDQ=">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/-5JRZ4bJvA7FdlaTj4lc1RAARCpRH_R9x8Ly8_Y5WHo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/b3JpZ2luYWxmaWxt/YXJ0LmNvbS9jZG4v/c2hvcC9wcm9kdWN0/cy9oYXJyeV9wb3R0/ZXJfYW5kX3RoZV9w/aGlsb3NvcGhlcnNf/c3RvbmVfMjAwMV90/ZWFzZXJfb3JpZ2lu/YWxfZmlsbV9hcnRf/NjRhZGViM2QtNzk4/Yy00OWE1LWFkNzQt/ZjA0OTE2MDJiN2U5/LmpwZz92PTE2Mzg4/MzgwODkmd2lkdGg9/MTIwMA">
+
+<a href="javascript:void(0)" class="movie-title">
+Harry Potter and the Sorcerers Stone (2001)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Harry Potter and the Sorcerers Stone (2001)</p>
+
+<p><b>Director:</b>Chris Columbus</p>
+
+<p><b>Starring:</b>Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+
+<p><b>Genres:</b>Adventure, Fantasy</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>7.9/10</p>
+
+<p><b>Last Updated:</b>27 December 2025</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD0xNDBjODUzM2RiOThjZmU1ZDdjNWE5NzFhZDc5MTRiZCZleHA9MTc3OTgxMjE2NyZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXJzIFN0b25lICgyMDAxKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBTb3JjZXJlciBzIFN0b25lIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXIgcyBTdG9uZSAoMzYwcCBIRCkvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXIgcyBTdG9uZSAyMDAxIE9yaWdpbmFsIDM2MHAgSEQubXA0">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD05OWQ2ZDJhNmVlNjIyYTIwMzJhN2I5MTZiMWExOTU4MCZleHA9MTc3OTgxMjE5MSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXJzIFN0b25lICgyMDAxKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBTb3JjZXJlciBzIFN0b25lIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXIgcyBTdG9uZSAoNzIwcCBIRCkvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXIgcyBTdG9uZSAyMDAxIE9yaWdpbmFsIDcyMHAgSEQubXA0">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjgmaGFzaD1kZGVjNTMwZmIxMzRiOWYyMjRmNjgyOTNmMmI2N2Q0MyZleHA9MTc3OTgxMjIzNSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXJzIFN0b25lICgyMDAxKS9IYXJyeSBQb3R0ZXIgYW5kIHRoZSBTb3JjZXJlciBzIFN0b25lIChPcmlnaW5hbCkvSGFycnkgUG90dGVyIGFuZCB0aGUgU29yY2VyZXIgcyBTdG9uZSAoMTA4MHAgSEQpL0hhcnJ5IFBvdHRlciBhbmQgdGhlIFNvcmNlcmVyIHMgU3RvbmUgMjAwMSBPcmlnaW5hbCAxMDgwcCBIRC5tcDQ=">
+Download 1080p
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 
 </main>
@@ -3114,15 +4888,22 @@ document.querySelectorAll(".f");
 let requestBox =
 document.querySelector(".request-box");
 
+let sortBox =
+document.querySelector(".sort-box");
+
 /* REQUEST BOX HIDE */
 
 if(input.length > 0){
 
 requestBox.style.display = "none";
 
+sortBox.style.display = "none";
+
 }else{
 
 requestBox.style.display = "block";
+
+sortBox.style.display = "flex";
 
 }
 
@@ -3144,6 +4925,79 @@ movie.style.display = "block";
 movie.style.display = "none";
 
 }
+
+});
+
+}
+
+</script>
+<script>
+
+function sortMovies(){
+
+let sortValue =
+document.getElementById("sortSelect").value;
+
+let moviesContainer =
+document.querySelector(".movies");
+
+let movies =
+Array.from(document.querySelectorAll(".f"));
+
+movies.sort((a,b)=>{
+
+let titleA =
+a.querySelector(".movie-title")
+.innerText
+.toLowerCase();
+
+let titleB =
+b.querySelector(".movie-title")
+.innerText
+.toLowerCase();
+
+/* A-Z */
+
+if(sortValue === "az"){
+
+return titleA.localeCompare(titleB);
+
+}
+
+/* Z-A */
+
+if(sortValue === "za"){
+
+return titleB.localeCompare(titleA);
+
+}
+
+/* DATE */
+
+if(sortValue === "date"){
+
+let dateA =
+a.querySelector(".details")
+.innerText.match(/Last Updated:\s*(.*)/i);
+
+let dateB =
+b.querySelector(".details")
+.innerText.match(/Last Updated:\s*(.*)/i);
+
+dateA = new Date(dateA[1]);
+dateB = new Date(dateB[1]);
+
+return dateB - dateA;
+
+}
+
+});
+
+/* RE-APPEND */
+
+movies.forEach(movie=>{
+
+moviesContainer.appendChild(movie);
 
 });
 
