@@ -20,14 +20,141 @@
     padding:0;
     box-sizing:border-box;
 }
+/* BODY */
 
 body{
+
     background:#050505;
-    font-family:Arial, sans-serif;
-    padding:20px;
-    color:white;
+
+    overflow-x:hidden;
+
+    position:relative;
+
 }
 
+/* ANIMATED BACKGROUND */
+
+.animated-bg{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:-1;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(255,0,60,0.15),
+    transparent 30%),
+
+    radial-gradient(circle at bottom right,
+    rgba(0,150,255,0.15),
+    transparent 30%),
+
+    radial-gradient(circle at center,
+    rgba(255,255,255,0.03),
+    transparent 40%);
+
+}
+
+/* MOVING GLOW */
+
+.animated-bg::before,
+
+.animated-bg::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    animation:moveGlow 15s linear infinite;
+
+}
+
+/* RED GLOW */
+
+.animated-bg::before{
+
+    background:
+    rgba(255,0,80,0.25);
+
+    top:-200px;
+    left:-150px;
+
+}
+
+/* BLUE GLOW */
+
+.animated-bg::after{
+
+    background:
+    rgba(0,140,255,0.2);
+
+    bottom:-200px;
+    right:-150px;
+
+    animation-delay:7s;
+
+}
+
+/* ANIMATION */
+
+@keyframes moveGlow{
+
+0%{
+
+transform:
+translate(0,0)
+scale(1);
+
+}
+
+25%{
+
+transform:
+translate(120px,80px)
+scale(1.2);
+
+}
+
+50%{
+
+transform:
+translate(-80px,120px)
+scale(0.9);
+
+}
+
+75%{
+
+transform:
+translate(100px,-100px)
+scale(1.1);
+
+}
+
+100%{
+
+transform:
+translate(0,0)
+scale(1);
+
+}
+
+}
 /* movies row */
 .movies{
     display:flex;
@@ -36,6 +163,7 @@ body{
     justify-content:space-evenly;
     align-items:flex-start;
 }
+
 
 /* movie card */
 .f{
@@ -82,7 +210,8 @@ body{
     max-height:0;
     overflow:hidden;
     transition:max-height 0.4s ease;
-    background:#0d0d0d;
+    background:black;
+    color:white;
     padding:0 15px;
 }
 
@@ -259,14 +388,12 @@ onkeyup="searchMovies()">
 }
 
 .search-box{
-    position:sticky;
-    top:0;
-    z-index:999;
+    position:relative;
     width:100%;
     display:flex;
     justify-content:center;
     padding:20px 0;
-    background:#050505;
+    background:transparent;
 }
     
 /* LOGO */
@@ -696,10 +823,350 @@ onkeyup="searchMovies()">
     
 
 }
+/* PLAYER CONTROLS */
+
+.plyr__controls{
+
+    display:grid !important;
+
+    grid-template-columns:
+    repeat(7,auto);
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:15px !important;
+
+}
+
+/* PROGRESS BAR FULL WIDTH */
+
+.plyr__progress{
+
+    grid-column:1/-1;
+
+    width:100% !important;
+
+    margin-bottom:10px;
+
+}
+
+/* BUTTON SIZE */
+
+.plyr__control{
+
+    transform:scale(1.1);
+
+}
+
+/* FULLSCREEN BUTTON */
+
+.plyr__control[data-plyr="fullscreen"]{
+
+    display:flex !important;
+
+    opacity:1 !important;
+
+    visibility:visible !important;
+
+}
+
+/* VIDEO FULLSCREEN */
+
+.plyr--fullscreen-active video{
+
+    object-fit:contain !important;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.plyr__controls{
+
+    grid-template-columns:
+    repeat(5,auto);
+
+    gap:8px;
+
+}
+
+.plyr__time{
+
+    font-size:12px;
+
+}
+
+}
+/* PLYR PLAYER */
+
+.plyr{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:black;
+
+}
+
+/* CONTROLS */
+
+.plyr__controls{
+
+    position:absolute !important;
+
+    bottom:0 !important;
+
+    left:0;
+
+    width:100%;
+
+    padding:18px !important;
+
+    background:
+    linear-gradient(
+    transparent,
+    rgba(0,0,0,0.95)
+    ) !important;
+
+    display:flex !important;
+
+    flex-wrap:wrap !important;
+
+    justify-content:center !important;
+
+    align-items:center !important;
+
+    gap:14px !important;
+
+}
+
+/* PROGRESS BAR */
+
+.plyr__progress{
+
+    flex:0 0 100% !important;
+
+    margin-bottom:15px !important;
+
+}
+
+/* BUTTONS */
+
+.plyr__control{
+
+    background:rgba(255,255,255,0.12) !important;
+
+    border-radius:50% !important;
+
+    width:48px;
+
+    height:48px;
+
+    display:flex !important;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:0.3s;
+
+}
+
+/* HOVER */
+
+.plyr__control:hover{
+
+    background:#ff003c !important;
+
+    transform:scale(1.12);
+
+}
+
+/* PLAY BUTTON BIG */
+
+.plyr__control[data-plyr="play"]{
+
+    width:58px;
+
+    height:58px;
+
+    background:#ff003c !important;
+
+    box-shadow:
+    0 0 20px rgba(255,0,60,0.8);
+
+}
+
+/* TIME */
+
+.plyr__time{
+
+    color:white !important;
+
+    font-size:15px !important;
+
+    font-weight:bold;
+
+}
+
+/* SETTINGS */
+
+.plyr__menu{
+
+    margin-left:5px;
+
+}
+
+/* VOLUME */
+
+.plyr__volume{
+
+    max-width:120px;
+
+}
+
+/* FULLSCREEN */
+
+.plyr__control[data-plyr="fullscreen"]{
+
+    display:flex !important;
+
+    opacity:1 !important;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.plyr__controls{
+
+    padding:12px !important;
+
+    gap:10px !important;
+
+}
+
+.plyr__control{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+.plyr__control[data-plyr="play"]{
+
+    width:52px;
+
+    height:52px;
+
+}
+
+.plyr__time{
+
+    font-size:12px !important;
+
+}
+
+}
+/* FULLSCREEN BUTTON FIX */
+
+.plyr__control[data-plyr="fullscreen"]{
+
+    display:flex !important;
+
+    visibility:visible !important;
+
+    opacity:1 !important;
+
+    position:relative !important;
+
+}
+
+/* FULLSCREEN EXIT ICON */
+
+.plyr--fullscreen-active 
+.plyr__control[data-plyr="fullscreen"]{
+
+    background:#ff003c !important;
+
+    box-shadow:
+    0 0 15px rgba(255,0,60,0.8);
+
+}
+/* FULLSCREEN BUTTON FIX */
+
+.plyr__control[data-plyr="fullscreen"]{
+
+    display:flex !important;
+
+    visibility:visible !important;
+
+    opacity:1 !important;
+
+    z-index:99999 !important;
+
+}
+
+/* FULLSCREEN MODE */
+
+.plyr--fullscreen-active 
+.plyr__controls{
+
+    z-index:99999 !important;
+
+}
+
+/* EXIT ICON */
+
+.plyr--fullscreen-active 
+.plyr__control[data-plyr="fullscreen"]{
+
+    position:relative !important;
+
+    right:0 !important;
+
+}
+/* CINEMA MODE */
+
+#videoPopup{
+
+backdrop-filter:blur(10px);
+
+}
+/* LOADER */
+
+.plyr--loading .plyr__control--overlaid{
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+
 </style>
 </head>
 
 <body>
+    <div class="animated-bg"></div>
 <!-- LOADING SCREEN -->
 
 <div id="loader">
@@ -767,7 +1234,7 @@ Request Movie
 <main class="movies">
 
 <!-- MOVIE CARD -->
- <div class="f">
+<div class="f">
 
 <img src="https://imgs.search.brave.com/IRe-WZRFwgd_0dL-fmqtUkBMIV0kDYqh-a85yyY5tFg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9waC1iaWcv/MjAyNi8wNC9rYXJh/MTc3NzI5MTEwNV8w/LmpwZWc">
 
@@ -874,7 +1341,111 @@ onclick="openPlayer('https://s14.cdnserver02.xyz/Moviesda.Mobi_-_Mr_and_Mrs_Bach
 </div>
 </div>
 </div>
- <div class="f">
+<div class="f">
+
+<img src="https://imgs.tamilprinttv.com/images/44348.jpg">
+
+<a href="javascript:void(0)" class="movie-title">
+Vinai Vidhaithavan (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Vinai Vidhaithavan (2026)</p>
+
+<p><b>Director:</b>N/A</p>
+
+<p><b>Starring:</b>Prajin, Gayatri Rema, Deepak Ram,</p>
+
+<p><b>Genres:</b>Horror, Thriller</p>
+
+<p><b>Quality:</b>HD DVD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>5.7/10</p>
+
+<p><b>Last Updated:</b>27 May 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s15.cdnserver02.xyz/Moviesda.Mobi_-_Vinai_Vidhaithavan_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s01.cdnserver01.xyz/Moviesda.Mobi_-_Vinai_Vidhaithavan_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s22.cdnserver03.xyz/Moviesda.Mobi_-_Vinai_Vidhaithavan_2026_Original_1080p_HD_(3.1_GB).mp4">
+Download 1080p
+</a>
+<button class="watch-btn"
+
+onclick="openPlayer('https://s21.cdnserver03.xyz/Moviesda.Mobi_-_Vinai_Vidhaithavan_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
+</div>
+</div>
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/duffoAk_8WiBOqytEA0eBIjsktk0ihRqltv9OltcU2M/rs:fit:500:0:1:0/g:ce/aHR0cDovL3d3dy5p/bXBhd2FyZHMuY29t/LzIwMjYvcG9zdGVy/cy9tZXJtYWlkLmpw/Zw">
+
+<a href="javascript:void(0)" class="movie-title">
+Mermaid (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Mermaid (2026)</p>
+
+<p><b>Director:</b>Tyler Cornack</p>
+
+<p><b>Starring:</b>Johnny Pemberton, Avery Potemri, Kevin Nealon</p>
+
+<p><b>Genres:</b>Drama, Comedy, Horror</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>6/10</p>
+
+<p><b>Last Updated:</b>27 May 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s06.dubshare.one/isaiDub.io_-_Mermaid_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s03.dubshare.one/isaiDub.io_-_Mermaid_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s02.dubshare.one/isaiDub.io_-_Mermaid_2026_Original_1080p_HD.mp4">
+Download 1080p
+</a>
+<button class="watch-btn"
+
+onclick="openPlayer('https://s08.dubshare.one/isaiDub.io_-_Mermaid_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
+</div>
+</div>
+</div>
+<div class="f">
 
 <img src="https://imgs.search.brave.com/5nPe4wKMjlpQKaobI_lnlUKdrsXMhXNQQKqfUG3uZJw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXN2cy5vbmVpbmRp/YS5jb20vcGgtYmln/LzIwMjYvMDUvYnJv/dGhlcnMtYW5kLXNp/c3RlcnMtd2ViLXNl/cmllcy13aGVuLWFu/ZC13aGVyZS10by13/YXRjaC1vbi1vdHQx/Nzc5NzA0NzU4XzUu/anBn">
 
@@ -4950,7 +5521,7 @@ Download 720p
 </a>
 <button class="watch-btn"
 
-onclick="openPlayer('https://s05.hotshare.link/Moviesda.Mobi_-_Parasakthi_Audio_Launch_2026_Full_Show_720p_HD.mp4?stream=1')">
+onclick="openPlayer('https://dl5.biggshare.xyz/Moviesda.Mobi_-_Parasakthi_Audio_Launch_2026_Full_Show_720p_HD.mp4?stream=1')">
 
 ▶ Watch Now
 
@@ -5717,6 +6288,7 @@ controls:[
 'rewind',
 'fast-forward',
 'progress',
+'pip',
 'current-time',
 'mute',
 'volume',
@@ -5786,7 +6358,74 @@ closePlayer();
 }
 
 });
+/* DOUBLE TAP */
+
+let lastTap = 0;
+
+document.getElementById("player")
+.addEventListener("click",function(e){
+
+const currentTime = new Date().getTime();
+
+const tapLength =
+currentTime - lastTap;
+
+if(tapLength < 300 && tapLength > 0){
+
+let video =
+document.querySelector("video");
+
+/* LEFT */
+
+if(e.clientX < window.innerWidth / 2){
+
+video.currentTime -= 10;
+
+}
+
+/* RIGHT */
+
+else{
+
+video.currentTime += 10;
+
+}
+
+}
+
+lastTap = currentTime;
+
+});
+/* SAVE TIME */
+
+player.on('timeupdate',()=>{
+
+localStorage.setItem(
+'watchTime',
+player.currentTime
+);
+
+});
+
+/* LOAD TIME */
+
+player.on('loadedmetadata',()=>{
+
+let savedTime =
+localStorage.getItem(
+'watchTime'
+);
+
+if(savedTime){
+
+player.currentTime =
+savedTime;
+
+}
+
+});
 
 </script>
+
 </body>
 </html>
