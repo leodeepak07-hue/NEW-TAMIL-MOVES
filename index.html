@@ -584,6 +584,118 @@ onkeyup="searchMovies()">
     0 0 30px rgba(255,0,60,1);
 
 }
+/* VIDEO POPUP */
+
+#videoPopup{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    rgba(0,0,0,0.97);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+}
+
+/* VIDEO CONTAINER */
+
+.video-container{
+
+    width:95%;
+
+    max-width:1100px;
+
+    position:relative;
+
+}
+
+/* VIDEO */
+
+#player{
+
+    width:100%;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+/* CLOSE */
+
+.close-btn{
+
+    position:absolute;
+
+    top:-50px;
+
+    right:0;
+
+    color:white;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+    z-index:10;
+
+}
+/* WATCH NOW BUTTON */
+
+.watch-btn{
+
+    width:100%;
+
+    padding:9px;
+
+    margin-top:2px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #c800c8,
+    #d300e6
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+   
+
+}
+
+/* HOVER */
+
+.watch-btn:hover{
+
+    transform:scale(1.03);
+
+    
+
+}
 </style>
 </head>
 
@@ -657,6 +769,113 @@ Request Movie
 <!-- MOVIE CARD -->
  <div class="f">
 
+<img src="https://imgs.search.brave.com/IRe-WZRFwgd_0dL-fmqtUkBMIV0kDYqh-a85yyY5tFg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9waC1iaWcv/MjAyNi8wNC9rYXJh/MTc3NzI5MTEwNV8w/LmpwZWc">
+
+<a href="javascript:void(0)" class="movie-title">
+Kara (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Kara (2026)</p>
+
+<p><b>Director:</b>Vignesh Raja</p>
+
+<p><b>Starring:</b>Dhanush, Mamitha Baiju, Suraj Venjaramoodu</p>
+
+<p><b>Genres:</b>Action, Thriller</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>8.1/10</p>
+
+<p><b>Last Updated:</b>28 May 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s13.cdnserver02.xyz/Moviesda.Mobi_-_Kara_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s03.cdnserver01.xyz/Moviesda.Mobi_-_Kara_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="https://s31.cdnserver04.xyz/Moviesda.Mobi_-_Kara_2026_Original_1080p_HD_(3.5_GB).mp4">
+Download 1080p
+</a>
+<button class="watch-btn"
+
+onclick="openPlayer('https://s35.cdnserver04.xyz/Moviesda.Mobi_-_Kara_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+<div class="f">
+
+<img src="https://imgs.search.brave.com/sOmu7G6quUtcKoBjd29LJnB_Ig0ZwA2sd-Kqavfaq2Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL01yLWFuZC1N/cnMtQmFjaGVsb3It/LS0tR2FsbGVyeS1h/OTc2NjVlMC0zNmZk/LTExZjAtYjQyNi1h/NTA2NzFhY2ZjMjQu/anBnP2ltPVJlc2l6/ZSx3aWR0aD0zMjA">
+
+<a href="javascript:void(0)" class="movie-title">
+Mr and Mrs Bachelor (2026)
+</a>
+
+<div class="details">
+
+<p><b>Movie:</b>Mr and Mrs Bachelor (2026)</p>
+
+<p><b>Director:</b>Deepu Karunakaran</p>
+
+<p><b>Starring:</b>Anaswara Rajan, Dayyana Hameed, Indrajith Sukumaran</p>
+
+<p><b>Genres:</b>Drama, Romantic</p>
+
+<p><b>Quality:</b>Original HD</p>
+
+<p><b>Language:</b>Tamil</p>
+
+<p><b>Movie Rating:</b>8.5/10</p>
+
+<p><b>Last Updated:</b>28 May 2026</p>
+
+<div class="links">
+
+<a class="p480"
+href="https://s03.cdnserver01.xyz/Moviesda.Mobi_-_Mr_and_Mrs_Bachelor_2026_Original_360p_HD.mp4">
+Download 360p
+</a>
+
+<a class="p720"
+href="https://s34.cdnserver04.xyz/Moviesda.Mobi_-_Mr_and_Mrs_Bachelor_2026_Original_720p_HD.mp4">
+Download 720p
+</a>
+
+<a class="p1080"
+href="">
+Download 1080p
+</a>
+<button class="watch-btn"
+
+onclick="openPlayer('https://s14.cdnserver02.xyz/Moviesda.Mobi_-_Mr_and_Mrs_Bachelor_2026_Original_720p_HD.mp4?stream=4')">
+
+▶ Watch Now
+
+</button>
+</div>
+</div>
+</div>
+ <div class="f">
+
 <img src="https://imgs.search.brave.com/5nPe4wKMjlpQKaobI_lnlUKdrsXMhXNQQKqfUG3uZJw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXN2cy5vbmVpbmRp/YS5jb20vcGgtYmln/LzIwMjYvMDUvYnJv/dGhlcnMtYW5kLXNp/c3RlcnMtd2ViLXNl/cmllcy13aGVuLWFu/ZC13aGVyZS10by13/YXRjaC1vbi1vdHQx/Nzc5NzA0NzU4XzUu/anBn">
 
 <a href="javascript:void(0)" class="movie-title">
@@ -708,54 +927,7 @@ Download Epi 4
 </div>
 
 </div>
-<div class="f">
 
-<img src="https://imgs.search.brave.com/kbCXqm26ytlIt4wOw_iTemSjlaVeC8JXS3QNwHSACbA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9pbWcvMjgw/eDM4My9wb3Bjb3Ju/L21vdmllX3Bvc3Rl/cnMva2FyYS0yMDI2/MDExNjExNDc0NS0y/Mzc5OS5qcGc">
-
-<a href="javascript:void(0)" class="movie-title">
-Kara (2026)
-</a>
-
-<div class="details">
-
-<p><b>Movie:</b>Kara (2026)</p>
-
-<p><b>Director:</b>Vignesh Raja</p>
-
-<p><b>Starring:</b> Dhanush, Mamitha Baiju, Suraj Venjaramoodu</p>
-
-<p><b>Genres:</b> Action, Thriller</p>
-
-<p><b>Quality:</b> HQ PreDVD</p>
-
-<p><b>Language:</b> Tamil</p>
-
-<p><b>Movie Rating:</b>8.1/10</p>
-
-<p><b>Last Updated:</b> 01 May 2026</p>
-
-<div class="links">
-
-<a class="p480"
-href="https://s33.cdnserver04.xyz/Kara_2026_HQ_PreDVD_360p_HD.mp4">
-Download 360p
-</a>
-
-<a class="p720"
-href="https://s12.cdnserver02.xyz/Kara_2026_HQ_PreDVD_720p_HD.mp4">
-Download 720p
-</a>
-
-<a class="p1080"
-href="https://s35.cdnserver04.xyz/Kara_2026_HQ_PreDVD_1080p_HD.mp4">
-Download 1080p
-</a>
-
-</div>
-
-</div>
-
-</div>
 <div class="f">
 
 <img src="https://imgs.search.brave.com/_6m1EZ6dtyttAaqpMViSw12h_b7D82GAZH08u6AXTPU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk5UZGhORGN3/TldRdE4yRTRPUzAw/TVRnMUxXSXhOemN0/TkdaaFpUWmhabU16/WlRBd1hrRXlYa0Zx/Y0djQC5qcGc">
@@ -798,7 +970,13 @@ Download 720p
 href="https://s01.dubshare.one/isaiDub.io_-_Panda_Plan_2_The_Magical_Tribe_2026_Original_1080p_HD.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s01.dubshare.one/isaiDub.io_-_Panda_Plan_2_The_Magical_Tribe_2026_Original_1080p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1065,7 +1243,13 @@ Download 720p
 href="https://s02.cdnserver01.xyz/Athiradi_2026_HQ_PreDVD_1080p_HD.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s21.cdnserver03.xyz/Athiradi_2026_HQ_PreDVD_1080p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1114,7 +1298,13 @@ Download 720p
 href="https://movies.downloadpage.xyz/download/page/99016">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Jetlee_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1163,7 +1353,13 @@ Download 720p
 href="https://s05.cdnserver01.xyz/Drishyam_3_2026_HQ_PreDVD_1080p_HD.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s03.cdnserver01.xyz/Drishyam_3_2026_HQ_PreDVD_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1212,7 +1408,13 @@ Download 720p
 href="https://s22.cdnserver03.xyz/Moviesda.Mobi_-_Derby_2026_Original_1080p_HD_(2.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s22.cdnserver03.xyz/Moviesda.Mobi_-_Derby_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1261,7 +1463,13 @@ Download 720p
 href="https://s15.cdnserver02.xyz/Moviesda.Mobi_-_System_2026_Original_1080p_HD_(2.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s24.cdnserver03.xyz/Moviesda.Mobi_-_System_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1310,7 +1518,13 @@ Download 720p
 href="https://s35.cdnserver04.xyz/Karuppu_2026_HQ_PreDVD_(v2)_1080p_HD.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s13.cdnserver02.xyz/Karuppu_2026_HQ_PreDVD_(v2)_1080p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1359,7 +1573,13 @@ Download 720p
 href="https://s25.cdnserver03.xyz/Sattendru_Maarudhu_Vaanilai_2026_HQ_PreDVD_1080p_HD.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s13.cdnserver02.xyz/Sattendru_Maarudhu_Vaanilai_2026_HQ_PreDVD_1080p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1408,7 +1628,13 @@ Download 720p
 href="https://s14.cdnserver02.xyz/Moviesda.Mobi_-_Dhurandhar_The_Revenge_2026_Original_1080p_HD_(3.8_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s25.cdnserver03.xyz/Moviesda.Mobi_-_Dhurandhar_The_Revenge_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1457,7 +1683,13 @@ Download 720p
 href="https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Mr_X_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s03.cdnserver01.xyz/Moviesda.Mobi_-_Mr_X_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1506,7 +1738,13 @@ Download 720p
 href="https://s03.cdnserver01.xyz/Moviesda.Mobi_-_Arivaan_2026_Original_1080p_HD_(2.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s03.cdnserver01.xyz/Moviesda.Mobi_-_Arivaan_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1555,7 +1793,13 @@ Download 720p
 href="https://s02.cdnserver01.xyz/Moviesda.Mobi_-_Kaalidas_2_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s03.cdnserver01.xyz/Moviesda.Mobi_-_Kaalidas_2_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1604,7 +1848,13 @@ Download 720p
 href="https://s21.cdnserver03.xyz/Krishnavataram_Part_1_The_Heart_2026_HQ_PreDVD_1080p_HD.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s11.cdnserver02.xyz/Krishnavataram_Part_1_The_Heart_2026_HQ_PreDVD_1080p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1702,7 +1952,13 @@ Download 720p
 href="https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Neelira_2026_Original_1080p_HD_(2.0_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s12.cdnserver02.xyz/Moviesda.Mobi_-_Neelira_2026_Original_720p_HD_(950_MB).mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1751,7 +2007,13 @@ Download 720p
 href="https://s02.cdnserver01.xyz/Moviesda.Mobi_-_Dacoit_A_Love_Story_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s22.cdnserver03.xyz/Moviesda.Mobi_-_Dacoit_A_Love_Story_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1800,7 +2062,13 @@ Download 720p
 href="https://s11.cdnserver02.xyz/Vaazha_II_Biopic_of_a_Billion_Bros_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s12.cdnserver02.xyz/Vaazha_II_Biopic_of_a_Billion_Bros_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1849,7 +2117,13 @@ Download 720p
 href="https://s21.cdnserver03.xyz/Bharathanatyam_2_Mohiniyattam_2026_Original_1080p_HD_(3.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s23.cdnserver03.xyz/Bharathanatyam_2_Mohiniyattam_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1892,7 +2166,13 @@ Download 560p
 href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjImaGFzaD0zNTA3MTI1ZjNkOTk4MTM4NjhhYjNiNmFjOWJiMzNkZCZleHA9MTc3OTg0NzA5NiZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvTG92ZSA5MTEgKDIwMjQpL0xvdmUgOTExIChPcmlnaW5hbCkvTG92ZSA5MTEgKDcyMHAgSEQpL0xvdmUgOTExIDIwMjQgNzIwcCBIRC5tcDQ=">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjImaGFzaD1jYjZiM2ZkMzdhYzgwZGQ4M2U4NGI0MjQxY2Y4OTk5MyZleHA9MTc3OTg5ODc0NSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvTG92ZSA5MTEgKDIwMjQpL0xvdmUgOTExIChPcmlnaW5hbCkvTG92ZSA5MTEgKDcyMHAgSEQpL0xvdmUgOTExIDIwMjQgNzIwcCBIRC5tcDQ=&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1940,7 +2220,13 @@ Download 720p
 href="https://s14.cdnserver02.xyz/Moviesda.Mobi_-_Love_Insurance_Kompany_2026_Original_1080p_HD_(3.6_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s14.cdnserver02.xyz/Moviesda.Mobi_-_Love_Insurance_Kompany_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -1983,7 +2269,13 @@ Download 360p
 href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD0wODg2M2E4Y2FhMGRiYWFjZGNmZmI5ZDcxMTg5ZWViOSZleHA9MTc3OTgxNTczMCZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAzICgyMDEzKS9Jcm9uIE1hbiAzICg2NDB4MzYwKS9Jcm9uIE1hbiAzIEhELm1wNA==">
 Download 560p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD0wYTRiNzNlY2E5YjJlOTdhYTdjYTdmMjNiYmQ4NGExZSZleHA9MTc3OTg5ODk2OCZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAzICgyMDEzKS9Jcm9uIE1hbiAzICg2NDB4MzYwKS9Jcm9uIE1hbiAzIEhELm1wNA==&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2026,7 +2318,13 @@ Download 360p
 href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD0yYTEzNmFmYTU1MjFkMjdjNzczZjk2OGZhZGI0YjRiMiZleHA9MTc3OTgxNTQ4NSZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAyICgyMDEwKS9Jcm9uIE1hbiAyICg2NDB4MzYwKS9Jcm9uIE1hbiAyIEhELm1wNA==">
 Download 560p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD0yNTE4MjU0N2JhOWQxZDcxNWMwMzE3NDUzMjQ3MGJkYiZleHA9MTc3OTg5OTAyMiZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAyICgyMDEwKS9Jcm9uIE1hbiAyICg2NDB4MzYwKS9Jcm9uIE1hbiAyIEhELm1wNA==&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2069,7 +2367,13 @@ Download 360p
 href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD1lYTQwZWZiZGVlYTBlMjdiYjgyZDAyYmIwYWJiMjAzZSZleHA9MTc3OTgxNTIxOCZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAxICgyMDA4KS9Jcm9uIE1hbiAxICg2NDB4MzYwKS9Jcm9uIE1hbiAxIEhELm1wNA==">
 Download 560p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjYmaGFzaD1lZjYxNGZmYzlhZDUyODQwZmU2Nzc5MmJmN2YxYTFlYiZleHA9MTc3OTg5OTA3NCZwYXRoPVRhbWlsIER1YmJlZCBDb2xsZWN0aW9ucy8gSXJvbiBNYW4gVHJpbG9neSBDb2xsZWN0aW9ucy9Jcm9uIE1hbiAxICgyMDA4KS9Jcm9uIE1hbiAxICg2NDB4MzYwKS9Jcm9uIE1hbiAxIEhELm1wNA==&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2117,7 +2421,13 @@ Download 720p
 href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD1jNTc4ZmQxYTZmMzFiYWQ4NjhhZGRkOTQ2YTYwNzBlNCZleHA9MTc3OTgxNDg3OSZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgQ2hhcHRlciBUd28gKDIwMTkpL0lUIENoYXB0ZXIgVHdvIChPcmlnaW5hbCkvSVQgQ2hhcHRlciBUd28gKDEwODBwIEhEKS9JVCBDaGFwdGVyIFR3byAyMDE5IE9yaWdpbmFsIDEwODBwIEhELm1wNA==">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD02MjM4MmU5MTUzNjZmZGEzMGEwODU4YTg3ZTgxYzZlMiZleHA9MTc3OTg5OTE0OCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgQ2hhcHRlciBUd28gKDIwMTkpL0lUIENoYXB0ZXIgVHdvIChPcmlnaW5hbCkvSVQgQ2hhcHRlciBUd28gKDEwODBwIEhEKS9JVCBDaGFwdGVyIFR3byAyMDE5IE9yaWdpbmFsIDEwODBwIEhELm1wNA==&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2165,7 +2475,13 @@ Download 720p
 href="https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD05M2Q5MGZhZWNmMzcwN2MxOGE1OTM0YmRjOWMwZDUyNiZleHA9MTc3OTgxNDYxMiZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgKDIwMTcpL0lUIChPcmlnaW5hbCkvSVQgKDEwODBwIEhEKS9JVCAyMDE3IE9yaWdpbmFsIDEwODBwIEhELm1wNA==">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dub.uptodub.ch/download.php?dl=c2VydmVyPWR1YjcmaGFzaD00MGIxZmUzODA4M2M1MjlkYmQzNzMyZDUwYWVkNTgxOSZleHA9MTc3OTg5OTIwNCZwYXRoPVRhbWlsIER1YmJlZCBNb3ZpZXMvSVQgKDIwMTcpL0lUIChPcmlnaW5hbCkvSVQgKDEwODBwIEhEKS9JVCAyMDE3IE9yaWdpbmFsIDEwODBwIEhELm1wNA==&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2214,7 +2530,13 @@ Download 720p
 href="https://s01.cdnserver01.xyz/Moviesda.Mobi_-_Justice_for_Jeni_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s22.cdnserver03.xyz/Moviesda.Mobi_-_Justice_for_Jeni_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2263,7 +2585,13 @@ Download 720p
 href="https://s34.cdnserver04.xyz/Moviesda.Mobi_-_Oh_Butterfly_2026_Original_1080p_HD_(3.6_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s13.cdnserver02.xyz/Moviesda.Mobi_-_Oh_Butterfly_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2312,7 +2640,13 @@ Download 720p
 href="https://s34.cdnserver04.xyz/Moviesda.Mobi_-_Manithan_Deivamagalam_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s05.cdnserver01.xyz/Moviesda.Mobi_-_Manithan_Deivamagalam_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2361,7 +2695,13 @@ Download 720p
 href="https://s05.cdnserver01.xyz/Moviesda.Mobi_-_The_Kerala_Story_2_Goes_Beyond_2026_Original_1080p_HD_(3.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s15.cdnserver02.xyz/Moviesda.Mobi_-_The_Kerala_Story_2_Goes_Beyond_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2410,7 +2750,13 @@ Download 720p
 href="https://s31.cdnserver04.xyz/Moviesda.Mobi_-_Kayilan_2025_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s35.cdnserver04.xyz/Moviesda.Mobi_-_Kayilan_2025_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2459,7 +2805,13 @@ Download 720p
 href="https://s34.cdnserver04.xyz/Aadu_3_2026_Original_1080p_HD_(3.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s24.cdnserver03.xyz/Aadu_3_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2508,7 +2860,13 @@ Download 720p
 href="https://s15.cdnserver02.xyz/Moviesda.Mobi_-_Raakaasa_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s13.cdnserver02.xyz/Moviesda.Mobi_-_Raakaasa_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2557,7 +2915,13 @@ Download 720p
 href="https://s23.cdnserver03.xyz/Moviesda.Mobi_-_Biker_2026_Original_1080p_HD_(3.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s32.cdnserver04.xyz/Moviesda.Mobi_-_Biker_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2606,7 +2970,13 @@ Download 720p
 href="https://s14.cdnserver02.xyz/Moviesda.Mobi_-_TN_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s23.cdnserver03.xyz/Moviesda.Mobi_-_TN_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2655,7 +3025,13 @@ Download 720p
 href="https://s11.cdnserver02.xyz/Moviesda.Mobi_-_Viraaji_2026_Original_1080p_HD_(1.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s11.cdnserver02.xyz/Moviesda.Mobi_-_Viraaji_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2703,7 +3079,13 @@ Download 720p
 href="https://s01.hotshare.link/Moviesda.Mobi_-_Hot_Spot_2_Much_2026_Original_1080p_HD__3.4_GB_.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dl5.biggshare.xyz/Moviesda.Mobi_-_Hot_Spot_2_Much_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2751,7 +3133,13 @@ Download 720p
 href="https://dl10.biggshare.xyz/Moviesda.Mobi_-_Lucky_the_Superstar_2026_Original_1080p_HD__3.3_GB_.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dl10.biggshare.xyz/Moviesda.Mobi_-_Lucky_the_Superstar_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -2799,7 +3187,13 @@ Download 720p
 href="https://dl10.biggshare.xyz/Baby_Girl_2025_Original_1080p_HD__3.4_GB_.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s09.hotshare.link/Moviesda.Mobi_-_Baby_Girl_2025_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -2845,7 +3239,13 @@ Download 720p
 href="https://s14.cdnserver02.xyz/Moviesda.Mobi_-_LipLock_2026_Original_1080p_HD_(1.3_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s14.cdnserver02.xyz/Moviesda.Mobi_-_LipLock_2026_Original_1080p_HD_(1.3_GB).mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -2891,7 +3291,13 @@ Download 720p
 href="https://s01.cdnserver01.xyz/Sweety_Naughty_Crazy_2026_HQ_PreDVD_1080p_HD.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s01.cdnserver01.xyz/Sweety_Naughty_Crazy_2026_HQ_PreDVD_1080p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -2937,7 +3343,13 @@ Download 720p
 href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPWM5ZDU5M2VmYzUwOWRkZGE4MTY0ZDk1ZGFjNjA4N2FjJmV4cD0xNzc5ODUxOTY0JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvS29tYnVzZWV2aSAoMjAyNSkvS29tYnVzZWV2aSAoT3JpZ2luYWwpL0tvbWJ1c2VldmkgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gS29tYnVzZWV2aSAyMDI1IE9yaWdpbmFsIDEwODBwIEhEICgzLjUgR0IpLm1wNA==">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTVkNzE2YjkxZTIxOTQ5Nzg5MWViNmIwNzVlNGJhZDFmJmV4cD0xNzc5OTM2NjkzJnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvS29tYnVzZWV2aSAoMjAyNSkvS29tYnVzZWV2aSAoT3JpZ2luYWwpL0tvbWJ1c2VldmkgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBLb21idXNlZXZpIDIwMjUgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -2983,7 +3395,13 @@ Download 720p
 href="https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Thalaivar_Thambi_Thalaimaiyil_2026_Original_1080p_HD_(3.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Thalaivar_Thambi_Thalaimaiyil_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3029,6 +3447,13 @@ Download 720p
 href="https://s32.cdnserver04.xyz/Moviesda.Mobi_-_Parasakthi_2026_Uncensored_Version_Original_1080p_HD_(3.3_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
+
+onclick="openPlayer('https://s34.cdnserver04.xyz/Moviesda.Mobi_-_Parasakthi_2026_Uncensored_Version_Original_1080p_HD_(3.3_GB).mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 
 </div>
 </div>
@@ -3075,7 +3500,13 @@ Download 720p
 href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTVlOWEyZDhkYjljYTRkYmU5N2MzZWY1MjE3YzU1OTAzJmV4cD0xNzc5ODUyNzA1JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDIwMjUpL0lQTCBJbmRpYW4gUGVuYWwgTGF3IChPcmlnaW5hbCkvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gSVBMIEluZGlhbiBQZW5hbCBMYXcgMjAyNSBPcmlnaW5hbCAxMDgwcCBIRCAoMy40IEdCKS5tcDQ=">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTAwZjUyYWI2MTRhODYyZjdiM2FjYzc3ZjUyYWEzMGZiJmV4cD0xNzc5OTM2ODI0JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDIwMjUpL0lQTCBJbmRpYW4gUGVuYWwgTGF3IChPcmlnaW5hbCkvSVBMIEluZGlhbiBQZW5hbCBMYXcgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBJUEwgSW5kaWFuIFBlbmFsIExhdyAyMDI1IE9yaWdpbmFsIDcyMHAgSEQubXA0&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3121,7 +3552,13 @@ Download 720p
 href="https://s22.cdnserver03.xyz/Moviesda.Mobi_-_The_Raja_Saab_2026_Original_1080p_HD_(3.4_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s04.cdnserver01.xyz/Moviesda.Mobi_-_The_Raja_Saab_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3167,7 +3604,13 @@ Download 720p
 href="https://dl8.biggshare.xyz/Sarvam_Maya_2025_Original_1080p_HD__3.4_GB_.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dl5.biggshare.xyz/Sarvam_Maya_2025_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3213,7 +3656,13 @@ Download 720p
 href="https://dl10.biggshare.xyz/Moviesda.Mobi_-_Dhurandhar_2025_Original_1080p_HD__3.2_GB_.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://dl6.biggshare.xyz/Moviesda.Mobi_-_Dhurandhar_2025_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3259,7 +3708,13 @@ Download 720p
 href="https://dl9.biggshare.xyz/Moviesda.Mobi_-_Vaa_Vaathiyaar_2026_Original_1080p_HD__3.5_GB_.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s01.hotshare.link/Moviesda.Mobi_-_Vaa_Vaathiyaar_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3305,7 +3760,13 @@ Download 720p
 href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTU0NDE3OTA4NWY2YTFiOTk4ZDc0Yzc3ZTRiOWM1MmE1JmV4cD0xNzc5ODU0MTg4JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvU2lyYWkgKDIwMjUpL1NpcmFpIChPcmlnaW5hbCkvU2lyYWkgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gU2lyYWkgMjAyNSBPcmlnaW5hbCAxMDgwcCBIRCAoMi40IEdCKS5tcDQ=">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTg2ZjYyMzQ4MWE3YTA2MjU2N2RkNWZjMTQ0MTQxNjU4JmV4cD0xNzc5OTM3MTE4JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvU2lyYWkgKDIwMjUpL1NpcmFpIChPcmlnaW5hbCkvU2lyYWkgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBTaXJhaSAyMDI1IE9yaWdpbmFsIDcyMHAgSEQubXA0&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3351,7 +3812,13 @@ Download 720p
 href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTAzYzQyNzY5YzY2ZDY4YjQ3ODg3MDM0MzNiZTdkZTA3JmV4cD0xNzc5ODU0MzY5JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvVGVyZSBJc2hrIE1laW4gKDIwMjUpL1RlcmUgSXNoayBNZWluIChPcmlnaW5hbCkvVGVyZSBJc2hrIE1laW4gKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gVGVyZSBJc2hrIE1laW4gMjAyNSBPcmlnaW5hbCAxMDgwcCBIRCAoMy4wIEdCKS5tcDQ=">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPWZhODg0Y2NkM2VlNzA0NjMyZDEzODA3MzkxOTI2OWRlJmV4cD0xNzc5OTM3MTc2JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvVGVyZSBJc2hrIE1laW4gKDIwMjUpL1RlcmUgSXNoayBNZWluIChPcmlnaW5hbCkvVGVyZSBJc2hrIE1laW4gKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBUZXJlIElzaGsgTWVpbiAyMDI1IE9yaWdpbmFsIDcyMHAgSEQubXA0&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3397,7 +3864,13 @@ Download 720p
 href="https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTc1MGFhZjY0Y2FkZDUyYjYzMmVkNjk5ZmZhOTA5YjM3JmV4cD0xNzc5ODU0NjA2JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvTWFyayAoMjAyNSkvTWFyayAoT3JpZ2luYWwpL01hcmsgKDEwODBwIEhEKS9Nb3ZpZXNkYS5Nb2JpIC0gTWFyayAyMDI1IE9yaWdpbmFsIDEwODBwIEhEICgyLjcgR0IpLm1wNA==">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://cdn.uptomkv.ch/download.php?dl=c2VydmVyPW12MSZoYXNoPTRmOWFjYmFjOTdmN2ZlMjdkOGRhMDUzNWNjMWE4ZWNiJmV4cD0xNzc5OTM3MjI5JnBhdGg9VGFtaWwgMjAyNSBNb3ZpZXMvTWFyayAoMjAyNSkvTWFyayAoT3JpZ2luYWwpL01hcmsgKDcyMHAgSEQpL01vdmllc2RhLk1vYmkgLSBNYXJrIDIwMjUgT3JpZ2luYWwgNzIwcCBIRC5tcDQ=&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -3444,7 +3917,13 @@ Download 720p
 href="https://s11.cdnserver02.xyz/Moviesda.Mobi_-_Galatta_Family_2025_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s25.cdnserver03.xyz/Moviesda.Mobi_-_Galatta_Family_2025_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3493,7 +3972,13 @@ Download 720p
 href="https://s31.cdnserver04.xyz/Prathichaya_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s13.cdnserver02.xyz/Prathichaya_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3542,7 +4027,13 @@ Download 720p
 href="https://s13.cdnserver02.xyz/Moviesda.Mobi_-_Happy_Raj_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s31.cdnserver04.xyz/Moviesda.Mobi_-_Happy_Raj_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3591,7 +4082,13 @@ Download 720p
 href="https://cdn.uptodl.ch/download.php?server=cdn4&hash=aa2fd8e7ad9041fbe12d0b9e5e155248&exp=1779704278&path=Tamil%20HD%20Mobile%20Movies/Shamitabh%20(2015)/Shamitabh%20(Original)/Shamitabh%20(1080p%20HD)/Moviesda.Mobi%20-%20Shamitabh%202015%20Original%201080p%20HD%20(2.7%20GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://cdn.uptodl.ch/download.php?server=cdn4&hash=ba85f9b201056f04024914a76cdbb1b6&exp=1779937449&path=Tamil%20HD%20Mobile%20Movies/Shamitabh%20(2015)/Shamitabh%20(Original)/Shamitabh%20(720p%20HD)/Moviesda.Mobi%20-%20Shamitabh%202015%20Original%20720p%20HD.mp4&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3640,7 +4137,13 @@ Download 720p
 href="https://s15.cdnserver02.xyz/Moviesda.Mobi_-_Mustafa_Mustafa_2026_Original_1080p_HD_(3.6_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Mustafa_Mustafa_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3689,7 +4192,13 @@ Download 720p
 href="https://s23.cdnserver03.xyz/Moviesda.Mobi_-_Youth_2026_Original_1080p_HD_(3.6_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s35.cdnserver04.xyz/Moviesda.Mobi_-_Youth_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3738,7 +4247,13 @@ Download 720p
 href="https://s33.cdnserver04.xyz/Moviesda.Mobi_-_Suyodhana_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s15.cdnserver02.xyz/Moviesda.Mobi_-_Suyodhana_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3787,7 +4302,13 @@ Download 720p
 href="https://s15.cdnserver02.xyz/Moviesda.Mobi_-_Kaa_The_Forest_2026_Original_1080p_HD_(2.3_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s13.cdnserver02.xyz/Moviesda.Mobi_-_Kaa_The_Forest_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3836,7 +4357,13 @@ Download 720p
 href="https://s34.cdnserver04.xyz/Moviesda.Mobi_-_Second_Case_of_Seetharam_2026_Original_1080p_HD_(3.0_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s25.cdnserver03.xyz/Moviesda.Mobi_-_Second_Case_of_Seetharam_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3885,7 +4412,13 @@ Download 720p
 href="https://s34.cdnserver04.xyz/Moviesda.Mobi_-_Ustaad_Bhagat_Singh_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s32.cdnserver04.xyz/Moviesda.Mobi_-_Ustaad_Bhagat_Singh_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3934,7 +4467,13 @@ Download 720p
 href="https://s03.cdnserver01.xyz/Moviesda.Mobi_-_Toaster_2026_Original_1080p_HD_(3.2_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s32.cdnserver04.xyz/Moviesda.Mobi_-_Toaster_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -3983,7 +4522,13 @@ Download 720p
 href="https://cdn.uptodl.ch/download.php?server=cdn4&hash=2e9928ffa99f465ca8a0a52db571e066&exp=1779708419&path=Tamil%20HD%20Mobile%20Movies/Sarkar%20(2018)/Sarkar%20(Original)/Sarkar%20(1080p%20HD)/Moviesda.Mobi%20-%20Sarkar%202018%20Original%201080p%20HD%20(3.5%20GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://cdn.uptodl.ch/download.php?server=cdn4&hash=b30d10afdc03e8d8ddc015f44f33f181&exp=1779937907&path=Tamil%20HD%20Mobile%20Movies/Sarkar%20(2018)/Sarkar%20(Original)/Sarkar%20(1080p%20HD)/Moviesda.Mobi%20-%20Sarkar%202018%20Original%201080p%20HD%20(3.5%20GB).mp4&stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -4032,7 +4577,13 @@ Download 720p
 href="https://s23.cdnserver03.xyz/Sambavam_Adhyayam_Onnu_2026_Original_1080p_HD_(3.3_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s23.cdnserver03.xyz/Sambavam_Adhyayam_Onnu_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -4081,7 +4632,13 @@ Download 720p
 href="https://s12.cdnserver02.xyz/Her_2026_Original_1080p_HD_(1.7_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s35.cdnserver04.xyz/Her_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -4130,7 +4687,13 @@ Download 720p
 href="https://s33.cdnserver04.xyz/Moviesda.Mobi_-_Thaai_Kizhavi_2026_Original_1080p_HD_(3.5_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s12.cdnserver02.xyz/Moviesda.Mobi_-_Thaai_Kizhavi_2026_Original_720p_HD_(950_MB).mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -4179,7 +4742,13 @@ Download 720p
 href="https://s12.cdnserver02.xyz/Moviesda.Mobi_-_Kadhal_Kadhai_Sollava_2026_Original_1080p_HD_(3.6_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s12.cdnserver02.xyz/Moviesda.Mobi_-_Kadhal_Kadhai_Sollava_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -4228,7 +4797,13 @@ Download 720p
 href="https://s11.cdnserver02.xyz/Moviesda.Mobi_-_Kadhal_Reset_Repeat_2026_Original_1080p_HD_(3.6_GB).mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s24.cdnserver03.xyz/Moviesda.Mobi_-_Kadhal_Reset_Repeat_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -4277,7 +4852,13 @@ Download 720p
 href="https://s07.hotshare.link/Moviesda.Mobi_-_Seetha_Payanam_2026_Original_1080p_HD__3.5_GB_.mp4">
 Download 1080p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s02.hotshare.link/Moviesda.Mobi_-_Seetha_Payanam_2026_Original_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 
 </div>
@@ -4320,7 +4901,13 @@ Download 480p
 href="https://s01.hotshare.link/Moviesda.Mobi_-_Jana_Nayagan_Audio_Launch_2026_HDRip_720p_HD.mp4">
 Download 720p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s09.hotshare.link/Moviesda.Mobi_-_Jana_Nayagan_Audio_Launch_2026_HDRip_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -4361,7 +4948,13 @@ Download 360p
 href="https://dl5.biggshare.xyz/Moviesda.Mobi_-_Parasakthi_Audio_Launch_2026_Full_Show_720p_HD.mp4">
 Download 720p
 </a>
+<button class="watch-btn"
 
+onclick="openPlayer('https://s05.hotshare.link/Moviesda.Mobi_-_Parasakthi_Audio_Launch_2026_Full_Show_720p_HD.mp4?stream=1')">
+
+▶ Watch Now
+
+</button>
 </div>
 </div>
 </div>
@@ -4754,6 +5347,72 @@ Download 1080p
 </main>
 
 <script>
+let d360 = "";
+let d720 = "";
+let d1080 = "";
+
+/* OPEN PLAYER */
+
+function openPlayer(
+videoUrl,
+link360,
+link720,
+link1080
+){
+
+document.getElementById(
+"videoPopup"
+).style.display = "flex";
+
+/* STORE LINKS */
+
+d360 = link360;
+
+d720 = link720;
+
+d1080 = link1080;
+
+/* PLAYER */
+
+player.source = {
+
+type:'video',
+
+sources:[{
+
+src:videoUrl,
+
+type:'video/mp4'
+
+}]
+
+};
+
+player.play();
+
+}
+
+/* DOWNLOADS */
+
+function download360(){
+
+window.open(d360);
+
+}
+
+function download720(){
+
+window.open(d720);
+
+}
+
+function download1080(){
+
+window.open(d1080);
+
+}
+</script>    
+<script>
 
 function searchMovies(){
 
@@ -5002,6 +5661,131 @@ moviesContainer.appendChild(movie);
 });
 
 }
+</script>
+<!-- PLYR CSS -->
+
+<link rel="stylesheet"
+href="https://cdn.plyr.io/3.7.8/plyr.css"/>
+
+<!-- VIDEO POPUP -->
+
+<div id="videoPopup">
+
+<div class="video-container">
+
+<span class="close-btn"
+onclick="closePlayer()">
+
+✖
+
+</span>
+
+<video
+id="player"
+playsinline
+controls>
+
+<source
+id="videoSource"
+src=""
+type="video/mp4">
+
+</video>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PLYR JS -->
+
+<script src=
+"https://cdn.plyr.io/3.7.8/plyr.polyfilled.js">
+
+</script>
+
+<script>
+
+/* PLAYER */
+
+const player =
+new Plyr('#player',{
+controls:[
+'play-large',
+'play',
+'rewind',
+'fast-forward',
+'progress',
+'current-time',
+'mute',
+'volume',
+'settings',
+'fullscreen'
+],
+
+settings:[
+'speed'
+],
+
+speed:{
+selected:1,
+options:[0.5,1,1.5,2]
+}
+
+});
+
+/* OPEN PLAYER */
+
+function openPlayer(videoUrl){
+
+document.getElementById(
+"videoPopup"
+).style.display = "flex";
+
+player.source = {
+
+type:'video',
+
+sources:[{
+
+src:videoUrl,
+
+type:'video/mp4'
+
+}]
+
+};
+
+player.play();
+
+}
+
+/* CLOSE PLAYER */
+
+function closePlayer(){
+
+document.getElementById(
+"videoPopup"
+).style.display = "none";
+
+player.pause();
+
+}
+
+/* ESC CLOSE */
+
+document.addEventListener(
+'keydown',
+function(e){
+
+if(e.key === "Escape"){
+
+closePlayer();
+
+}
+
+});
 
 </script>
 </body>
