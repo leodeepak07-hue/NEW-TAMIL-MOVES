@@ -1167,7 +1167,31 @@ transform:rotate(360deg);
 }
 
 }
+#installBtn{
 
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#ff004c;
+
+color:white;
+
+border:none;
+
+padding:12px 18px;
+
+border-radius:12px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
 
 </style>
 </head>
@@ -6584,36 +6608,35 @@ window.open(d1080);
 }
 </script>    
 <script>
-
 function searchMovies(){
 
-    let input = document.getElementById("searchInput").value.toLowerCase();
+let input =
+document.getElementById("searchInput")
+.value
+.toLowerCase()
+.trim();
 
-    let movies = document.querySelectorAll(".f");
+let movies =
+document.querySelectorAll(".f");
 
-    const requestBox = document.querySelector(".request-box");
+movies.forEach(movie=>{
 
-    if(input.value.length > 0){
-    requestBox.style.display = "none";
-    }else{
-    requestBox.style.display = "block";
-    }
+let text =
+movie.textContent.toLowerCase();
 
-    movies.forEach(movie => {
+if(text.includes(input)){
 
-        let title = movie.querySelector(".movie-title").innerText.toLowerCase();
+movie.style.display = "block";
 
-        if(title.includes(input)){
-            movie.style.display = "block";
-        }
-        else{
-            movie.style.display = "none";
-        }
+}else{
 
-    });
+movie.style.display = "none";
 
 }
 
+});
+
+}
 </script>
 <script>
 
@@ -7035,7 +7058,37 @@ navigator.serviceWorker.register(
 );
 
 }
+let deferredPrompt;
 
+window.addEventListener(
+'beforeinstallprompt',
+(e)=>{
+
+e.preventDefault();
+
+deferredPrompt = e;
+
+document.getElementById(
+"installBtn"
+).style.display = "block";
+
+});
+
+document.getElementById(
+"installBtn"
+).addEventListener(
+"click",
+async ()=>{
+
+deferredPrompt.prompt();
+
+});
 </script>
+
+<button id="installBtn" style="display:none;">
+
+📲 Install App
+
+</button>
 </body>
 </html>
